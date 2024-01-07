@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.card-box {
+    padding-top: 180px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 8px #1e1e1e;
+    height: 500px;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+p {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.5px;
+}
+
+
+.marquee_text {
+    color: #000;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    display: inline-block;
+    animation: marqueeAnimation 8s linear infinite;
+}
+
+.marquee-container {
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+@keyframes marqueeAnimation {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+@media (max-width: 320px) {
+    p {
+        font-family: 'Karla', sans-serif;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 1px;
+    }
+    
+    
+}
+
+@media (max-width: 768px) {
+    p {
+        font-family: 'Karla', sans-serif;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 1px;
+    }
+    
+    
+}
