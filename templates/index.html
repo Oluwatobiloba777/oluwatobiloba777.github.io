@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/output.css">
+    <title>MamaBobo Restaurant</title>
+</head>
+<body>
+    <main>
+        <header class="relative container mx-auto p-2  ">
+            <!--- Navbar-->
+            <nav class="flex items-center justify-between space-x-3">
+                <!-- Logo-->
+                <div class="">
+                    <a href="#" class="flex">
+                        <img src="/static/img/icons/restaurantlogoicon.svg" alt="header-icon" class="w-20 h-20 mr-1">
+                        <span class="mt-7 text-restaurant_green text-2xl font-bold font-poppins">MamaBobo <span class="text-restaurant_orange">Restaurant</span></span>   
+                    </a>
+                </div>
+                <!-- Menu Items-->
+                <div class="hidden md:flex space-x-5">
+                    <a href="#" class="font-inter font-bold text-black-400 hover:text-restaurant_green">Home</a>
+                    <a href="#services" class="font-inter font-bold text-black-400 hover:text-restaurant_green">Services</a>
+                    <a href="#menu" class="font-inter font-bold text-black-400 hover:text-restaurant_green">Menu</a>
+                    <a href="#gallery" class="font-inter font-bold text-black-400 hover:text-restaurant_green">Gallery</a>
+                    <a href="#about" class="font-inter font-bold text-black-400 hover:text-restaurant_green">About Us</a>
+                    <a href="#contact_us" class="font-inter font-bold text-black-400 hover:text-restaurant_green">Contact Us</a>
+                </div>
+                
+                <!--- Hamburger icon-->
+                <button id="hamburger-menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+
+                    <!--- Mobile Menu-->
+                <div class="md:hidden">
+                    <div id="hamburger-menu" class="absolute flex-col items-center hidden self-end py-6 mt-6 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                        <a href="#">Home</a>
+                        <a href="#">Services</a>
+                        <a href="#">Menu</a>
+                        <a href="#">Gallery</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero section -->
+        <section id="hero" class=" grid grid-cols-1 gap-5 items-center justify-center md:grid-cols-2">
+            <!-- Left item-->
+            <div class="hero_content flex flex-col justify-center mx-auto mb-18 space-y-8 md:mb-0 md:max-w-md">
+                <h1 class="max-w-md font-poppins font-bold text-3xl text-restaurant_green lg:text-6xl">MamaBobo <span class="text-restaurant_orange">Restaurant</span></h1>
+                <h4 class="max-w-md font-inter font-bold text-2xl lg:text-5xl">Authentic Nigerian Cuisine</h4>
+                <p class="max-w-sm font-karla font-bold">Come and taste why Nigerian food is so popular</p>
+                <div class="flex justify-center md:justify-start">
+                    <a href="#" class="mx-auto p-3 text-white font-poppins bg-green-600 rounded">View Menu</a>
+                </div>
+            </div>
+            <!-- Right item-->
+            <!-- slider-->
+            <div class="p-4 hero_slider">
+                <div class="slider-wrapper text-center relative md:max-w-1/2">
+                    <div class="slider h-72 max-w-auto md:h-96">
+                        <img id="slide-1" src="/static/img/slider/1.jpg" alt="fried rice">
+                        <img id="slide-2" src="/static/img/slider/2.JPG" alt="yam porridge">
+                        <img id="slide-3" src="/static/img/slider/3.JPG" alt="egusi">
+                        <img id="slide-4" src="/static/img/slider/4.JPG" alt="okro">
+                        <img id="slide-5" src="/static/img/slider/5.JPG" alt="vegetable">
+                    </div>
+                    <!-- slider nav-->
+                    <div class="slider-nav">
+                        <a href="#slider-1"></a>
+                        <a href="#slider-2"></a>
+                        <a href="#slider-3"></a>
+                        <a href="#slider-4"></a>
+                        <a href="#slider-5"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--- About Section-->
+        <section class="pt-6 grid grid-cols-1 gap-5 justify-center md:grid-cols-2" id="about">
+            <div class="flex flex-col p-4 justify-center md:mx-auto">
+                <img src="/static/img/about.jpg" alt="about-img" class="w-80 h-80 rounded-2xl about_img">
+            </div>
+            <div class="p-4 about_content">
+                <h1 class="font-inter font-bold text-4xl text-green-600 mb-4">About Us</h1>
+                <p class="font-inter text-sm md:text-xl">
+                    "Embark on a culinary journey with us at MamaBobo Restaurant by sitting in or getting takeaway, 
+                    where authentic Nigerian flavors come to life. As the first Nigerian restaurant in Northern Ireland, 
+                    we're dedicated to bringing you the finest West African ingredients and delectable dishes. 
+                    From our shelves stocked with vibrant spices and ingredients to our restaurant offering mouthwatering, 
+                    healthy Nigerian cuisine, we invite you to savor the tastes of tradition and innovation. Experience the 
+                    warmth of Nigerian hospitality and the vibrant tapestry of our culture through every bite."
+                </p>
+            </div>
+        </section>
+
+        <!--- Service section-->
+        <section id="services">
+            <h3 class="font-inter font-bold mt-6 mb-10 text-3xl text-center text-green-600">Our Services</h3>
+            <div class="grid grid-cols-1 p-4 justify-center gap-4 md:grid-cols-4">
+
+                <!----- first card-->
+                <div class="services_content flex p-2 flex-col items-center mx-auto">
+                    <svg class="w-16 h-16 fill-green-600 mb-2" viewBox="0 0 512 512" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="dinner-romance-heart-love-valentine">                       
+                        <path d="M160,296v8c0,4.418-3.582,8-8,8h-23.754l23.516,94.063c1.07,4.281-1.535,8.625-5.82,9.695   c-0.652,0.164-1.305,0.242-1.949,0.242c-3.582,0-6.844-2.422-7.754-6.063c-0.594-2.378-24.092-95.486-24.088-97.938H87.902   c0.001,2.478-31.525,96.171-32.312,98.531C54.473,413.883,51.352,416,48,416c-0.836,0-1.691-0.133-2.531-0.414   c-4.191-1.391-6.457-5.922-5.059-10.117L71.566,312H48c-4.418,0-8-3.582-8-8v-17.333V280v-48v-14.667V160c0-4.418,3.582-8,8-8h8   c13.255,0,24,10.745,24,24v40c0,13.255-10.745,24-24,24v32h80C149.255,272,160,282.745,160,296z M242.739,194.485   c7.318,7.398,19.204,7.398,26.522,0l32.5-32.855c11.85-11.979,13.889-31.23,3.614-44.605   c-12.415-16.161-35.529-17.243-49.376-3.245c-13.847-13.998-36.961-12.917-49.375,3.245c-10.275,13.376-8.235,32.626,3.614,44.605   L242.739,194.485z M464,152h-8c-13.255,0-24,10.745-24,24v40c0,13.255,10.745,24,24,24v32h-80c-13.255,0-24,10.745-24,24v8   c0,4.418,3.582,8,8,8h23.754l-23.516,94.063c-1.07,4.281,1.535,8.625,5.82,9.695c0.652,0.164,1.305,0.242,1.949,0.242   c3.582,0,6.844-2.422,7.754-6.063c0.595-2.378,24.092-95.486,24.088-97.938h24.248c-0.001,2.478,31.525,96.171,32.312,98.531   c1.117,3.352,4.238,5.469,7.59,5.469c0.836,0,1.691-0.133,2.531-0.414c4.191-1.391,6.457-5.922,5.059-10.117L440.434,312H464   c4.418,0,8-3.582,8-8v-21.333V280v-48v-2.667V160C472,155.582,468.418,152,464,152z M277.324,280   c-8.004,0-11.586,2.688-16.539,6.398C255.082,290.68,247.98,296,234.648,296c-13.328,0-20.426-5.32-26.125-9.602   C203.57,282.688,199.996,280,192,280v24c0,4.418,3.582,8,8,8h42v64h-30.343c-8.836,0-16,7.163-16,16v8c0,4.418,3.582,8,8,8h104.686   c4.418,0,8-3.582,8-8v-8c0-8.837-7.163-16-16-16H270v-64h42c4.418,0,8-3.582,8-8v-8c-13.336,0-20.434-5.32-26.141-9.602   C288.906,282.688,285.324,280,277.324,280z M288,232h-64c-17.673,0-32,14.327-32,32c13.328,0,20.426,5.32,26.125,9.602   c4.953,3.711,8.527,6.398,16.523,6.398c8,0,11.582-2.688,16.535-6.398c5.707-4.281,12.805-9.602,26.141-9.602   c13.332,0,20.434,5.32,26.137,9.602C308.414,277.313,311.996,280,320,280v-16C320,246.327,305.673,232,288,232z"/>              
+                        </g>
+                        <g id="Layer_1"/>
+                        </svg>                   
+                    <h4 class="font-inter font-bold mb-2 ">Dine In</h4>
+                    <p class="font-inter text-justify text-sm ml-2 md:ml-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa recusandae fugiat nisi exercitationem labore voluptas corrupti commodi sunt quam, necessitatibus, et, tempora ad quo nam. Consequatur praesentium at iste.</p>
+                </div>
+
+                <!----- second card-->
+                <div class="services_content flex p-2 flex-col items-center mx-auto">
+                    <svg class="w-16 h-16 fill-green-600 mb-2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                     viewBox="0 0 256 160" enable-background="new 0 0 256 160" xml:space="preserve">
+                    <path d="M64.538,111.459c-12.775,0-23.113,10.338-23.113,23.113c0,12.775,10.338,23.113,23.113,23.113
+                        c12.775,0,23.113-10.338,23.113-23.113C87.651,121.797,77.314,111.459,64.538,111.459z M64.538,143.426
+                        c-4.853,0-8.853-4-8.853-8.853c0-4.853,4-8.853,8.853-8.853s8.853,4,8.853,8.853C73.391,139.425,69.391,143.426,64.538,143.426z
+                        M2,121.44c0,4.481,3.519,8.56,8,8.56h22c0.924,0,1.832-1.16,2-2c2.521-14.456,15.326-24.441,30.538-24.441
+                        s27.82,10.026,30.341,24.482C95.048,128.966,96.075,130,97,130h33V2H2V121.44z M72.613,51.769h15.239
+                        c9.518,0,8.876,6.256,8.876,6.256H63.737C63.737,58.025,63.042,51.769,72.613,51.769z M65.18,60.966h30.265
+                        c1.551,0,2.834,1.23,2.834,2.834c0,1.551-1.283,2.834-2.834,2.834H65.18c-1.551,0-2.834-1.23-2.834-2.834
+                        C62.346,62.25,63.576,60.966,65.18,60.966z M87.799,75.938H72.613c-9.571,0-8.876-6.256-8.876-6.256h32.939
+                        C96.675,69.682,97.317,75.938,87.799,75.938z M34.113,17.387l4.492,15.56h22.511l-5.454,42.991H37.268L31.76,32.947l4.171-0.053
+                        l-4.278-14.812L34.113,17.387z M30.477,79.2h68.444v5.187H30.477V79.2z M252,113h-5V91c0-7.396-5.52-13-13-13h-24
+                        c-0.504,0-1.099-0.268-1.436-0.604l-37.401-36.405C169.482,39.31,167.437,38.084,165,38h-27v92h40c0.925,0,1.832-1.16,2-2
+                        c2.521-14.456,14.83-25.425,30.043-25.425s27.82,11.01,30.341,25.466c0.168,0.925,1.691,1.959,2.616,1.959h2
+                        c4.791,0,9-4.312,9-9.019v-6.219C254,113.837,253.009,113,252,113z M191,78h-41c-1.009,0-2-0.992-2-2V50c0-1.009,0.991-2,2-2h13
+                        c0.504,0,1.523,0.555,1.944,0.891L192,75C193.009,76.261,192.597,78,191,78z M210.043,110.475
+                        c-12.775,0-23.113,10.338-23.113,23.113c0,12.775,10.338,23.113,23.113,23.113s23.113-10.338,23.113-23.113
+                        C233.156,120.813,222.818,110.475,210.043,110.475z M210.043,142.441c-4.853,0-8.853-4-8.853-8.853c0-4.853,4-8.853,8.853-8.853
+                        s8.853,4,8.853,8.853C218.896,138.441,214.896,142.441,210.043,142.441z"/>
+                    </svg>
+                    <h4 class="font-inter font-bold mb-2 ">Delivery</h4>
+                    <p class="font-inter text-justify text-sm ml-2 md:ml-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa recusandae fugiat nisi exercitationem labore voluptas corrupti commodi sunt quam, necessitatibus, et, tempora ad quo nam. Consequatur praesentium at iste.</p>
+                </div>
+
+                <!---third card-->
+                <div class="services_content flex p-2 flex-col items-center mx-auto">
+                    <svg class="w-16 h-16 fill-green-600 mb-2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="0 0 463 463" xml:space="preserve">
+                    <g>
+                        <g>
+                            <g>
+                                <path d="M367.372,142.726c-0.413-8.257-7.213-14.726-15.481-14.726H298.12l-12.974-82.169C280.953,19.274,258.396,0,231.49,0
+                                    c-26.885,0-49.442,19.274-53.635,45.831L164.881,128H111.11c-8.268,0-15.068,6.469-15.481,14.726l-15.2,304
+                                    c-0.211,4.22,1.338,8.396,4.25,11.457S91.685,463,95.911,463h271.18c4.225,0,8.318-1.756,11.23-4.817s4.461-7.236,4.25-11.457
+                                    L367.372,142.726z M192.672,48.171C195.708,28.95,212.032,15,231.511,15c19.458,0,35.784,13.95,38.819,33.171L282.935,128
+                                    H180.068L192.672,48.171z M367.453,447.845C367.305,448,367.149,448,367.091,448H95.911c-0.059,0-0.214,0-0.362-0.155
+                                    c-0.148-0.155-0.14-0.311-0.137-0.369l15.2-304c0.013-0.267,0.233-0.476,0.5-0.476h51.402l-2.421,15.33
+                                    c-0.646,4.092,2.147,7.932,6.238,8.578c0.396,0.063,0.79,0.093,1.179,0.093c3.626,0,6.815-2.636,7.399-6.331l2.79-17.67h107.604
+                                    l2.79,17.67c0.646,4.091,4.483,6.88,8.578,6.238c4.091-0.646,6.884-4.486,6.238-8.578l-2.42-15.33h51.402
+                                    c0.267,0,0.486,0.209,0.5,0.476l15.2,304C367.593,447.534,367.601,447.689,367.453,447.845z"/>
+                                <path d="M231.501,192c-4.142,0-7.5,3.357-7.5,7.5V240h-9v-40.5c0-4.143-3.358-7.5-7.5-7.5c-4.142,0-7.5,3.357-7.5,7.5V240h-9
+                                    v-40.5c0-4.143-3.358-7.5-7.5-7.5c-4.142,0-7.5,3.357-7.5,7.5v56c0,12.958,10.542,23.5,23.5,23.5h0.5v128.5
+                                    c0,4.143,3.358,7.5,7.5,7.5c4.142,0,7.5-3.357,7.5-7.5V279h0.5c12.958,0,23.5-10.542,23.5-23.5v-56
+                                    C239.001,195.357,235.643,192,231.501,192z M224.001,255.5c0,4.687-3.813,8.5-8.5,8.5h-16c-4.687,0-8.5-3.813-8.5-8.5V255h33
+                                    V255.5z"/>
+                                <path d="M287.719,206.754c-0.816-8.162-7.617-14.317-15.82-14.317c-8.767,0-15.899,7.133-15.899,15.899V407.5
+                                    c0,4.143,3.358,7.5,7.5,7.5s7.5-3.357,7.5-7.5V359h6.717c6.653,0,13.02-2.837,17.47-7.782s6.6-11.576,5.9-18.191L287.719,206.754
+                                    z M284.036,341.186C282.403,343,280.159,344,277.718,344H271V208.336c0-0.496,0.403-0.899,0.899-0.899
+                                    c0.464,0,0.849,0.348,0.899,0.853l13.372,126.316C286.427,337.033,285.669,339.37,284.036,341.186z"/>
+                            </g>
+                        </g>
+                    </g>
+                    </svg>
+                    <h4 class="font-inter font-bold mb-2 ">Takeaway</h4>
+                    <p class="font-inter text-justify text-sm ml-2 md:ml-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa recusandae fugiat nisi exercitationem labore voluptas corrupti commodi sunt quam, necessitatibus, et, tempora ad quo nam. Consequatur praesentium at iste.</p>
+                </div>
+
+                <!--- fourth card-->
+                <div class="services_content flex p-2 flex-col items-center mx-auto">
+                    <svg class="w-16 h-16 fill-green-600 mb-2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	                viewBox="0 0 512 512" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M435.745,147.064H283.833c-4.513,0-8.17,3.658-8.17,8.17s3.657,8.17,8.17,8.17h151.911c4.513,0,8.17-3.658,8.17-8.17
+                                S440.258,147.064,435.745,147.064z"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <path d="M495.775,212.426h-19.179v-81.702h2.723c4.513,0,8.17-3.658,8.17-8.17c0-4.512-3.657-8.17-8.17-8.17h-13.929
+                                c-3.979-52.066-45.665-93.752-97.731-97.731V8.17c0-4.512-3.657-8.17-8.17-8.17s-8.17,3.658-8.17,8.17v8.482
+                                c-52.066,3.979-93.752,45.665-97.731,97.731H239.66c-4.513,0-8.17,3.658-8.17,8.17c0,4.512,3.657,8.17,8.17,8.17h2.723v81.702
+                                H185.17c3.575-4.753,6.141-10.306,7.371-16.34h3.545c4.513,0,8.17-3.658,8.17-8.17s-3.657-8.17-8.17-8.17H185.17
+                                c3.575-4.753,6.141-10.306,7.371-16.34h3.545c4.513,0,8.17-3.658,8.17-8.17s-3.657-8.17-8.17-8.17H185.17
+                                c3.575-4.753,6.141-10.306,7.371-16.34h3.545c4.513,0,8.17-3.658,8.17-8.17c0-4.512-3.657-8.17-8.17-8.17H185.17
+                                c3.575-4.753,6.141-10.306,7.371-16.34h3.545c4.513,0,8.17-3.658,8.17-8.17c0-4.512-3.657-8.17-8.17-8.17H32.681
+                                c-4.513,0-8.17,3.658-8.17,8.17c0,4.512,3.657,8.17,8.17,8.17h3.546c1.23,6.034,3.794,11.588,7.371,16.34H32.681
+                                c-4.513,0-8.17,3.658-8.17,8.17c0,4.512,3.657,8.17,8.17,8.17h3.546c1.23,6.034,3.794,11.588,7.371,16.34H32.681
+                                c-4.513,0-8.17,3.658-8.17,8.17s3.657,8.17,8.17,8.17h3.546c1.23,6.034,3.794,11.588,7.371,16.34H32.681
+                                c-4.513,0-8.17,3.658-8.17,8.17s3.657,8.17,8.17,8.17h3.546c1.23,6.034,3.794,11.588,7.371,16.34H16.225
+                                c-4.513,0-8.17,3.658-8.17,8.17v65.362c0,4.512,3.657,8.17,8.17,8.17h403.269c4.513,0,8.17-3.658,8.17-8.17s-3.657-8.17-8.17-8.17
+                                H24.395v-49.021h463.211v49.021h-35.431c-4.513,0-8.17,3.658-8.17,8.17s3.657,8.17,8.17,8.17h32.59v168.48
+                                c-12.302-1.192-19.384-5.099-27.371-9.506c-10.119-5.582-21.587-11.91-43.435-11.91c-21.848,0-33.317,6.328-43.435,11.91
+                                c-9.606,5.3-17.903,9.877-35.543,9.877c-17.64,0-25.938-4.577-35.544-9.877c-10.119-5.582-21.587-11.91-43.437-11.91
+                                s-33.318,6.328-43.437,11.91c-9.606,5.3-17.904,9.877-35.544,9.877c-17.639,0-25.937-4.577-35.542-9.877
+                                c-10.118-5.582-21.586-11.91-43.434-11.91c-21.848,0-33.317,6.328-43.435,11.91c-2.276,1.255-4.479,2.466-6.75,3.589
+                                c-5.705,2.821-11.829,5.064-20.623,5.916V318.638c0-4.512-3.657-8.17-8.17-8.17c-4.513,0-8.17,3.658-8.17,8.17v152.511
+                                c0,4.512,3.657,8.17,8.17,8.17c10.095,0,17.957-1.359,24.511-3.363v27.873c0,4.512,3.657,8.17,8.17,8.17
+                                c4.513,0,8.17-3.658,8.17-8.17v-35.004c0.873-0.475,1.736-0.948,2.585-1.416c9.606-5.3,17.903-9.877,35.542-9.877
+                                c17.639,0,25.936,4.578,35.54,9.876c10.118,5.583,21.586,11.911,43.435,11.911c21.85,0,33.318-6.328,43.437-11.91
+                                c9.606-5.3,17.904-9.877,35.544-9.877s25.938,4.578,35.544,9.877c10.119,5.583,21.587,11.91,43.437,11.91
+                                c21.849,0,33.318-6.328,43.436-11.91c9.606-5.3,17.903-9.877,35.542-9.877s25.936,4.578,35.54,9.876
+                                c0.849,0.468,1.711,0.941,2.584,1.416v35.006c0,4.512,3.657,8.17,8.17,8.17s8.17-3.658,8.17-8.17v-27.875
+                                c6.554,2.004,14.415,3.364,24.511,3.364c4.513,0,8.17-3.658,8.17-8.17V292.143c1.737-1.498,2.841-3.71,2.841-6.185v-65.362
+                                C503.945,216.084,500.288,212.426,495.775,212.426z M152.511,212.426H76.255c-10.651,0-19.733-6.831-23.105-16.34h122.466
+                                C172.243,205.594,163.161,212.426,152.511,212.426z M152.511,179.745H76.255c-10.651,0-19.733-6.831-23.105-16.34h122.466
+                                C172.243,172.913,163.161,179.745,152.511,179.745z M152.511,147.064H76.255c-10.651,0-19.733-6.831-23.105-16.34h122.466
+                                C172.243,140.232,163.161,147.064,152.511,147.064z M152.511,114.383H76.255c-10.651,0-19.733-6.831-23.105-16.34h122.466
+                                C172.243,107.552,163.161,114.383,152.511,114.383z M359.489,32.681c46.8,0,85.341,35.963,89.484,81.702H270.005
+                                C274.149,68.644,312.689,32.681,359.489,32.681z M460.255,212.426H258.723v-81.702h201.532V212.426z"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <circle cx="446.638" cy="373.106" r="8.17"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <circle cx="413.957" cy="405.787" r="8.17"/>
+                        </g>
+                    </g>
+                    </svg>
+                    <h4 class="font-inter font-bold mb-2 ">Catering</h4>
+                    <p class="font-inter text-justify text-sm ml-2 md:ml-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa recusandae fugiat nisi exercitationem labore voluptas corrupti commodi sunt quam, necessitatibus, et, tempora ad quo nam. Consequatur praesentium at iste.</p>
+                </div>
+            </div>
+        </section>
+
+        <!---- Menu section -->
+        <section id="menu">
+            <h2 class="font-inter font-bold mt-6 mb-6 text-3xl text-center text-green-600">Menu</h2>
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-4 xl:mx-24">
+                <div class="menu_content flex flex-col bg-#27302C rounded-xl shadow-lg items-center mx-auto">
+                    <img src="/static/img/jollof.jpg" alt="jollof" class="w-40 h-40 rounded m-4">
+                    <h5 class="font-inter font-bold text-sm text-green-600 text-center">Nigerian Jollof Rice</h5>
+                    <h6 class="font-poppins font-bold italic text-green-600 text-center">£12.00</h6>
+                </div>
+                <div class="menu_content flex flex-col bg-#27302C rounded-xl shadow-lg items-center mx-auto">
+                    <img src="/static/img/slider/1.jpg" alt="fried rice" class="w-40 h-40 rounded m-4">
+                    <h5 class="font-inter font-bold text-sm text-green-600 text-center">Nigerian Fried Rice</h5>
+                    <h6 class="font-poppins font-bold italic text-green-600 text-center">£12.00</h6>
+                </div>
+                <div class="menu_content flex flex-col bg-#27302C rounded-xl shadow-lg items-center mx-auto">
+                    <img src="/static/img/slider/3.JPG" alt="egusi" class="w-40 h-40 rounded m-4">
+                    <h5 class="font-inter font-bold text-sm text-green-600 text-center">Egusi Soup</h5>
+                    <h6 class="font-poppins font-bold italic text-green-600 text-center">£12.00</h6>
+                </div>
+                <div class="menu_content flex flex-col bg-#27302C rounded-xl shadow-lg items-center mx-auto">
+                    <img src="/static/img/slider/5.JPG" alt="egusi" class="w-40 h-40 rounded m-4">
+                    <h5 class="font-inter font-bold text-sm text-green-600 text-center">Vegetable Soup</h5>
+                    <h6 class="font-poppins font-bold italic text-green-600 text-center">£12.00</h6>
+                </div>
+            </div>
+            <div class="flex justify-between mt-6 mb-10 lg:mr-8">
+                <a href="#" class="mx-auto px-3 py-2 text-white font-poppins bg-green-600 rounded md:mr-1">View Menu</a>
+            </div>
+        </section>
+
+        <!--- order section-->
+        <section class="mt-10 order_content" id="order">
+            <h2 class="font-inter font-bold text-center text-green-600 text-xl lg:text-2xl xl:text-4xl">You can order from either platforms</h2>
+            <div class="grid grid-cols-1 gap-2 md:grid-cols-2">
+                <div class="order_content flex flex-col mx-auto">
+                    <svg class="w-64 h-64 order_img" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="-7.18746979 -26.38168905 168.95246979 114.18459908" xmlns="http://www.w3.org/2000/svg"><path d="m18.184.838a2.235 2.235 0 0 1 2.483 0 53.87 53.87 0 0 1 5.498 3.962s.476.33.489-.229a8.72 8.72 0 0 1 .127-2.158.984.984 0 0 1 .914-.635s2.159.108 3.53.292a1.34 1.34 0 0 1 1.156 1.187s.882 5.88 1.08 8c0 0 .17 1.08 1.733 2.908 0 0 3.174 4.445 3.543 5.295 0 0 .736 1.537-.851 1.746 0 0-2.896.292-3.175.356a.724.724 0 0 0 -.635.787s-.152 10.229-.901 15.143c0 0-.197 1.95-1.27 1.905 0 0-2.978-.095-3.67-.076 0 0-.298 0-.254-.4 0 0 1.517-15.95.489-24.013 0 0-.045-1.041-.838-1.27 0 0-.724-.292-1.416.635a25.302 25.302 0 0 0 -4.711 14.394s-.083 2.54.305 3.174c0 0 .24.445 1.473.546l1.561.21s.286 0 .26.38c0 0-.355 4.68-.456 5.512-.007.19-.045.376-.115.552 0 0-.057.159-.546.14 0 0-6.882-.05-7.657 0 0 0-.324 0-.393-.171-.07-.172-.477-6.039-.464-6.87a.414.414 0 0 1 .241-.407 4.139 4.139 0 0 0 1.905-3.04c.084-.89.096-1.783.038-2.674 0 0 .254-8.971.318-10.413 0 0 .05-.489-.585-.577a.592.592 0 0 0 -.711.438v.05c0 .051-.444 5.918-.362 8.254 0 0 .153 1.53-.907 1.562 0 0-1.029.153-1.08-1.123 0 0 .076-5.753.33-8.597a.635.635 0 0 0 -.565-.635.633.633 0 0 0 -.71.514.106.106 0 0 0 0 .05s-.445 5.506-.363 8.414c0 0 .127 1.41-.997 1.358 0 0-.94.108-.99-1.143 0 0 .254-7.879.324-8.488a.635.635 0 0 0 -.565-.597h-.064a.636.636 0 0 0 -.68.527.271.271 0 0 0 0 .057s-.418 9.422-.361 12.19c0 0-.038 2.845 2.063 4 0 0 .311.178.318.451 0 0 .235 4.997.45 6.61 0 0 .077.387-.266.387l-5.289.146a1.088 1.088 0 0 1 -1.08-1.029 118.401 118.401 0 0 1 -.977-15.968.813.813 0 0 0 -.635-.87s-2.705-.247-3.359-.412a1.124 1.124 0 0 1 -.686-1.658 54.422 54.422 0 0 1 17.957-18.679zm37.245 14.8h-5.22c-1.688 0-1.688 0-2.044 1.975-.355 1.974-.35 2.044 1.2 2.044h3.105l-1.765 10.089c-.426 2.254-1.41 3.81-4.445 4.724-.774.21-.984.489-.984.844.054.568.223 1.119.495 1.62.49 1.2.775 1.415 1.194 1.415a8.01 8.01 0 0 0 1.486-.286c4.298-1.409 6.063-4.723 6.768-8.673l1.975-11.352c.349-2.4.349-2.4-1.765-2.4m17.701 0c-2.114 0-2.114 0-2.4 1.765l-1.524 9.168c-.425 2.68-1.13 4.229-3.74 4.229-2.609 0-3.453-1.55-3.028-3.95l1.48-8.742c.425-2.47.349-2.47-1.835-2.47-2.185 0-2.185 0-2.47 1.695l-1.55 9.169c-.914 5.219 2.33 8.457 6.915 8.457 5.143 0 7.752-2.324 8.597-7.822l1.555-9.099c.35-2.4.21-2.4-1.974-2.4m9.631 15.022c1.696-.07 2.61-.844 2.61-1.619 0-.99-1.2-1.34-2.82-1.835-3.174-.99-6.063-2.114-6.063-5.498 0-4.02 3.315-6.21 7.473-6.21a49.87 49.87 0 0 1 5.01.216c1.124.14 1.41.49 1.054 2.254-.356 1.765-.775 1.905-1.759 1.835-1.2-.07-2.755-.216-4.584-.216-2.114 0-2.75.781-2.75 1.486 0 .914.845 1.41 2.82 1.975 3.663 1.054 6.063 2.54 6.063 5.714 0 3.74-2.749 5.924-7.193 6.063a35.31 35.31 0 0 1 -6.35-.349c-1.415-.216-1.485-.216-1.13-2.26.35-1.829.35-1.975 1.69-1.829 1.963.248 3.944.341 5.923.28m23.067-15.029h-11.918c-1.689 0-1.689 0-2.044 2.05-.356 2.052-.28 2.045 1.2 2.045h3.88l-2.191 12.648c-.42 2.463-.35 2.463 1.835 2.463 2.044 0 2.114 0 2.4-1.758l2.253-13.334h3.74c1.69 0 1.69 0 2.045-2.044.355-2.045.349-2.05-1.2-2.05m21.015 4.025c1.69 0 1.69 0 2.045-2.045.355-2.044.35-2.044-1.2-2.044h-8.533c-3.035 0-2.96 0-3.454 3.035l-2.184 12.761c-.566 3.315-.496 3.315 2.54 3.315h8.323c1.765 0 1.689 0 2.044-1.975.356-1.974.35-2.044-1.2-2.044h-7.2l.566-3.67h5.993c1.626 0 1.626 0 1.905-1.905.28-1.905.28-1.974-1.905-1.974h-5.289l.565-3.46zm9.01 6.749 2.75-6.064c.215-.495.215-.495.564-.495.35 0 .356 0 .426.565l.844 5.994zm7.473-8.464c-.419-2.4-.419-2.4-3.81-2.4-3.174 0-3.104 0-4.088 1.975l-7.124 14.882c-1.06 2.115-.845 2.324 1.759 2.324 2.05 0 2.05 0 2.895-1.905l1.124-2.54h6.914l.35 2.54c.285 1.905.355 1.905 2.4 1.905 2.33 0 2.539-.14 2.113-2.47l-2.533-14.31zm16.87-2.33h-11.987c-1.696 0-1.696 0-2.045 2.05-.35 2.052-.286 2.045 1.194 2.045h3.88l-2.185 12.648c-.425 2.463-.356 2.463 1.835 2.463 2.044 0 2.114 0 2.394-1.758l2.26-13.334h3.733c1.695 0 1.695 0 2.045-2.044.349-2.045.425-2.05-1.124-2.05" fill="#ff8000" fill-rule="nonzero"/></svg>
+                    
+                    <h4 class="flex justify-center">
+                        <a href="https://www.just-eat.co.uk/restaurants-mama-bobo-africa-restaurant-ballynafoy/menu?serviceType=collection&utm_source=google&utm_medium=organic&utm_campaign=orderactionv2" class="text-center px-3 py-2 text-white font-poppins bg-green-600 rounded md:mr-1">Order Now</a>
+                    </h4>
+                    
+                </div>
+                <div class="order_content flex flex-col mx-auto">
+                    <svg class="order_img w-64 h-64" xmlns="http://www.w3.org/2000/svg" viewBox="0.19000000000000128 0.25 367.46 61.17460741747068"><g fill="none"><path d="M194.32.25h40.87v10h-29.83v14.2h29v9.66h-29v14.44h29.83v10h-40.87zM348.06 59.6c12.53 0 19.59-6 19.59-14.24 0-5.87-4.18-10.25-12.93-12.15l-9.25-1.89c-5.37-1-7.06-2-7.06-4 0-2.59 2.59-4.18 7.36-4.18 5.17 0 9 1.39 10 6.17h10.84c-.59-9-7.06-14.94-20.18-14.94-11.34 0-19.3 4.68-19.3 13.75 0 6.27 4.38 10.35 13.83 12.34l10.34 2.39c4.08.8 5.17 1.9 5.17 3.59 0 2.69-3.08 4.38-8.06 4.38-6.26 0-9.84-1.39-11.23-6.17h-10.9c1.59 8.98 8.25 14.95 21.78 14.95zm-24.93-1.09H311.4c-7.36 0-11.44-4.58-11.44-10.36v-22.9h-8.25v-9.76H300V3.24h10.9v12.25h12.23v9.76H310.9v20.11c0 2.29 1.59 3.39 4.08 3.39h8.15zm-47-43v3.88a21.16 21.16 0 0 0-13.73-5 22.61 22.61 0 1 0 0 45.21 21.1 21.1 0 0 0 13.73-5v3.89H287v-43zM263.3 50.16a13.15 13.15 0 1 1 13-13.14 13 13 0 0 1-13.02 13.12z" fill="#05c167"/><path d="M170.06 23.56c-5.47 0-9.35 4.28-9.35 10.85v24.1h-8.35V16.09h8.25v5.18a11.19 11.19 0 0 1 9.94-5.48h3v7.77zM146.59 37.3c0-12.65-9-22.11-21.18-22.11a21.83 21.83 0 0 0-21.68 22.11c0 12.64 9.75 22.2 22.47 22.2a22.17 22.17 0 0 0 18.3-9.06L138.44 46a14.78 14.78 0 0 1-12.24 6.17 14.22 14.22 0 0 1-14-12.14h34.41zm-34.21-3.89c1.49-6.47 6.66-10.85 12.93-10.85s11.43 4.38 12.83 10.85zm-35.1-18.22a21.12 21.12 0 0 0-15 6.27V.25h-8.35v58.26h8.25v-5.38A21.45 21.45 0 0 0 77.3 59.5a22.16 22.16 0 1 0 0-44.31zm-.6 36.85A14.69 14.69 0 1 1 91.3 37.4 14.58 14.58 0 0 1 76.68 52zm-53.5-.4c8.06 0 14.32-6.18 14.32-15.44V.25h8.65v58.26H37.6V53a21.24 21.24 0 0 1-15.41 6.47c-12.43 0-22-9.06-22-22.8V.25H9v36c0 9.31 6 15.39 14.18 15.39z" fill="#000"/></g></svg>
+                    <h4 class="flex justify-center">
+                        <a href="https://www.ubereats.com/gb/store/mama-bobo-restaurant/fBYs2Wk_XsKQX_xu53hhyw?diningMode=PICKUP&utm_campaign=place-action-link&utm_medium=organic&utm_source=google" class="text-center px-3 py-2 text-white font-poppins bg-green-600 rounded md:mr-1">Order Now</a>
+                    </h4>
+                </div>
+            </div>
+        </section>
+
+        <!--- Contact us section-->
+        <section id="contact_us" class="mt-14 p-10">
+            <div class="grid grid-cols-1 gap-2 md:grid-cols-2">
+                <div class="contact_content flex flex-col">
+                    <h5 class="text-bold text-green-600 font-inter">Let's talk</h5>
+                    <button href="#" class="px-3 py-2 mt-4 mr-20 md:w-2/6 md:h-16 text-2xl text-white font-poppins bg-green-600 rounded">Contact Us</button>
+                </div>
+                <div class="contact_content flex flex-col">
+                    <h3 class="font-inter mt-4 font-bold md:text-2xl ">You can reach us via phone on e-mail</h3>
+                    <h4 class="font-inter font-bold md:text-xl">Phone: 0743618993</h4>
+                    <h4 class="font-inter font-bold md:text-xl">Email: restaurant@mamaboboafrica.com</h4>
+    
+                    <h2 class="font-inter font-bold md:text-xl"> Opening Hours:</h2>
+                    <h4 class="font-inter font-bold md:text-xl">Tuesday - Sunday: 12pm - 9pm <span class="italic">(closed on Mondays)</span></h4>
+                </div>
+            </div>
+        </section>
+
+        <!--- Footer section-->
+        <footer class="p-2 mt-10">
+            <div class="grid grid-cols-1 md:grid-cols-3">
+                <div class="footer_content flex flex-col mx-auto">
+                    <h2 class="font-inter font-bold text-restaurant_green text-xl lg:text-2xl">MamaBobo <span class="text-restaurant_orange">Restaurant</span></h2>
+                    <h5 class="font-inter font-bold italic">Authentic Nigerian Cuisine</h5>
+                    <div class="flex p-2 lg:pr-20 justify-evenly">
+                        <a href="https://www.facebook.com/mamaboboafrica/"><img src="/static/img/icons/facebook-app-symbol.png" alt="facebook" class="w-4 h-4"></a>
+                        <a href="https://www.instagram.com/mamaboboafrica/"><img src="/static/img/icons/instagram.png" alt="instagram" class="w-4 h-4"></a>
+                        <a href="https://www.tiktok.com/@mamaboboafrica"><img src="/static/img/icons/tik-tok.png" alt="tik-tok" class="w-4 h-4"></a>
+                    </div>
+                </div>
+                <div class="footer_content flex flex-col mt-4 md:mt-0 mx-auto">
+                    <h2 class="font-inter font-bold text-green-600 text-xl lg:text-2xl">Services</h2>
+                    <h6 class="font-inter font-bold italic">Dine In</h6>
+                    <h6 class="font-inter font-bold italic">Delivery</h6>
+                    <h6 class="font-inter font-bold italic">Takeaway</h6>
+                    <h6 class="font-inter font-bold italic">Catering</h6>
+                </div>
+                <div class="footer_content flex flex-col mx-auto text-center mt-4 md:mt-0">
+                    <h2 class="font-inter font-bold text-green-600 text-xl lg:text-2xl">Information</h2>
+                    <a href="#" class="font-inter font-bold">Allergens & Ingredients</a>
+                    <a href="#" class="font-inter font-bold">Terms And Conditions</a>
+                    <a href="#" class="font-inter font-bold">Cancellation Policy</a>
+                    <a href="#" class="font-inter font-bold">FAQ</a>
+                </div>
+            </div>
+            <p class="font-inter mt-4 italic text-xs text-center">&copy;2024 MamaBobo Restaurant. All rights Reserved.<span class="font-inter"> Developed by <a href="#" class="font-inter">Hunkutech</a></span></p>
+        </footer>
+    </main>
+
+    <!-- SCROLL REVEAL-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--- Main js-->
+    <script src="/static/scripts/script.js"></script>
+</body>
+</html>
