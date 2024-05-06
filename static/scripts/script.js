@@ -11,24 +11,21 @@ ham_btn.addEventListener('click', () => {
 
 // Slider
 
-const slider = document.querySelector('.slider');
-let slideIndex = 1;
-
 function showSlides() {
     const slides = document.querySelectorAll('.slider img');
     if (slideIndex > slides.length) { slideIndex = 1 }
     if (slideIndex < 1) { slideIndex = slides.length }
-    slides.forEach(slide => slide.style.display = 'none');
-    slides[slideIndex - 1].style.display = 'block';
-    slideIndex++;
-    setTimeout(showSlides, 3000); // Change slide every 3 seconds
+    if (slides.length > 0) {
+        slides.forEach(slide => slide.style.display = 'none');
+        slides[slideIndex - 1].style.display = 'block';
+        slideIndex++;
+        setTimeout(showSlides, 3000); // Change slide every 3 seconds
+    }
 }
 
-showSlides();
 
 
 /* SCROLL REVEAL ANIMATION */
-// Initialize ScrollReveal
 const sr = ScrollReveal({
     origin: 'top',
     distance: '30px',
@@ -36,7 +33,7 @@ const sr = ScrollReveal({
     reset: true
 });
 
-// Configure the elements to reveal
+// elements to reveal
 sr.reveal(`.hero_content, .hero_slider,
             .about_content, .about_img,
             .services_content, .menu_content,
@@ -44,3 +41,24 @@ sr.reveal(`.hero_content, .hero_slider,
             .footer_content`, {
     interval: 200
 });
+
+
+// gsap
+const animated_hero_img = document.querySelector('.animated_hero');
+const title = document.querySelector('h1');
+
+gsap.to(animated_hero_img, {
+    y:100,
+    scrollTrigger: {
+        trigger: '.animated_hero',
+        scrub:true
+    }
+})
+
+gsap.to(title, {
+    y:500,
+    scrollTrigger: {
+        trigger: '.animated_hero',
+        scrub: true
+    }
+})
