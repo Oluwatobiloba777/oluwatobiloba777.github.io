@@ -311,9 +311,22 @@
 
 
 
+/* overide accordion*/
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: ghostwhite;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+    border-color: #0F172B !important;
+}
 
+.accordion-flush {
+    color: #0F172B !important;
+}
 
-
+.contact_links {
+    color: blue;
+    text-decoration: underline;
+}
 
 
 /*** Footer ***/
