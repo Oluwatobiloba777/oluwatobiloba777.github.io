@@ -328,6 +328,11 @@
     text-decoration: underline;
 }
 
+.svg_icon {
+    width: 38px !important;
+    height: 38px !important;
+}
+
 
 /*** Footer ***/
 .footer .btn.btn-social {
