@@ -37,11 +37,14 @@
 
 .primary_green {
     color: #25542d;
+    font-weight: 700;
 }
 
 .primary_orange {
     color: #e4c99f;
+    font-weight: 700;
 }
+
 
 @media (max-width: 750px)  {
     .logo_green {
@@ -275,8 +278,16 @@
     transition: .5s;
 }
 
-.service_img {
-    color: var(--primary) !important;
+.service_img_cater{
+    height: 64px; 
+    width: 64px;
+    color: var(--light) !important;
+}
+
+.se
+
+.service_img_cater:hover{
+    fill: var(--light) !important;
 }
 
 .service_paragraph {
@@ -291,19 +302,25 @@
     color: var(--light) !important;
 }
 
-
-/*** Food Menu ***/
-.nav-pills .nav-item .active {
-    border-bottom: 2px solid var(--primary);
+/*** Order ***/
+.order-item {
+    transition: .5s;
 }
 
+/* .order_card {
+    height: 250px;
+} */
+
+.order_logo {
+    width: 150px !important;
+}
 
 /*** reservation ***/
 .reservation_img {
     position: relative;
     height: 100%;
     min-height: 600px;
-    background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(../img/reservatioin_img.jpg);
+    background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(../img/reservation_img.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -397,4 +414,18 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+.map_card {
+    min-height: 350px; 
+    border:0; 
+    width: 550px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .map_card {
+        min-height: 350px; 
+        border:0; 
+        width: 300px;
+    }
 }

@@ -45,27 +45,34 @@
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <img class="logo_img" src="img/logo.jpg" alt="Logo">
-                    <span class="logo_green fw-bold"> MamaBobo <span class="logo_orange">Restaurant</span></span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="services.html" class="nav-item nav-link">Services</a>
-                        <a href="menu.html" class="nav-item nav-link">Menu</a>
-                        <a href="booking.html" class="nav-item nav-link">Booking</a>
-                        <a href="#" class="nav-item nav-link">Order</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <img class="logo_img" src="img/logo.jpg" alt="Logo">
+                <span class="logo_green fw-bold"> MamaBobo <span class="logo_orange">Restaurant</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0 pe-4">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <!-- <a href="about.html" class="nav-item nav-link">About</a> -->
+                    <a href="services.html" class="nav-item nav-link">Services</a>
+                    <!-- <a href="menu.html" class="nav-item nav-link">Menu</a> -->
+                    <a href="booking.html" class="nav-item nav-link">Booking</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Order</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="https://mamabobo.co.uk/?serviceType=Pickup&utm_source=GoogleRedirect&utm_medium=organic&rwg_token=AJKvS9WDQEzg3d3PSJxr2oVfbPOf0tAx7orgvXtcpvimAZIwaTXSYw56QtqVqhoQ1eTdSZsN4Ix8xzfXB4P4oJklOa2DejWSdw%3D%3D" class="dropdown-item">OrderYOYO</a>
+                            <a href="https://www.ubereats.com/gb/store/mama-bobo-restaurant/fBYs2Wk_XsKQX_xu53hhyw?diningMode=PICKUP&utm_campaign=place-action-link&utm_medium=organic&utm_source=google" class="dropdown-item">UberEats</a>
+                            <a href="https://www.just-eat.co.uk/restaurants-mama-bobo-africa-restaurant-ballynafoy/menu?serviceType=collection&utm_source=google&utm_medium=organic&utm_campaign=foodorder" class="dropdown-item">JustEats</a>
+                        </div>
                     </div>
-                    <a href="booking.html" class="btn btn-primary py-2 px-4">Book A Table</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                 </div>
-            </nav>
+                <a href="#booking" class="btn btn-primary py-2 px-4">Book A Table</a>
+            </div>
+        </nav>
 
             <div class="container-xxl py-5 bg-dark hero-header mb-5">
                 <div class="container text-center my-5 pt-5 pb-4">
@@ -286,17 +293,18 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h5>
-                        <h5 class="text-light fw-normal">Tuesday - Sunday</h5>
-                        <p>12PM - 9PM</p>
-                        <h5 class="text-light fw-normal">Monday</h5>
-                        <p><i>closed</i></p>
+                        <p class="text-light fw-normal">Monday - <i>closed</i></p>
+                        <p class="text-light fw-normal">Tuesday - Friday</p>
+                        <p class="text-light fw-normal"><i>5pm - 9pm</i></p>
+                        <p class="text-light fw-normal">Saturday - <i>3pm - 9pm</i></p>
+                        <p class="text-light fw-normal">Sunday - <i>12pm - 6pm</i></p>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h5 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h5>
-                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Offers & Rewards</h5>
+                        <p>Sign up for amazing offers, coupons and rewards.</p>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
                             <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">claim</button>
                         </div>
                     </div>
                 </div>
