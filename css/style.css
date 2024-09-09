@@ -27,6 +27,9 @@
 }
 
 /*** Logo ***/
+.logo_img {
+    border-radius: 100%;
+}
 .logo_green {
     color: #25542d;
 }
