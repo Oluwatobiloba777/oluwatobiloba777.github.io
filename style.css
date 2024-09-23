@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+body {
+    background-color: #FAFAFA;
+}
+
+.fixed-nav-bar {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 9999; 
+    width: 100%; 
+    height: 80px; 
+}
+
+/* .hero-header {
+    background-image: url(./hero-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+
+/* service card*/ 
+.service-card {
+    width: 225px;
+    height: 140px;
+    transition: all .5s;
+    box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
+               -15px -15px 30px rgba(60, 60, 60, 0.082);
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .service-card:hover {
+    height: 350px;
+    background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
+  }
+  
+  .service-card>.service-card-header {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(25, 82, 149),rgba(5, 5, 5));
+    margin-bottom: 16px;
+  }
+  
+  .service-card>.service-card-header>.service-card-img-box {
+    width: 60px;
+  }
+  
+  .service-card>.service-card-header>.service-card-title {
+    font-family: "Figtree", "sans-Serif";
+    font-size: 16px;
+    letter-spacing: .1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 0 14px 0;
+    transition: all .5s;
+    color: #edededc5;
+  }
+  
+  .service-card:hover>.service-card-header {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+  }
+  
+  .service-card:hover>.service-card>.service-card-header>.service-card-title {
+    padding: 0;
+  }
+  
+  .service-card>.service-card-content {
+    display: block;
+    text-align: left;
+    color: #050505;
+    margin: 0 15px;
+  }
+  
+  .service-card>.service-card-content p {
+    font-family: "Figtree", "sans-Serif";
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 8px;
+    transition: all .5s;
+  }
+  
+  .service-card>.service-card-content a {
+    color: #195295;
+    cursor: pointer;
+    transition: all .5s;
+    font-size: .7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+  
+  .service-card>.service-card-content>.service-card-btn-link:hover {
+    border-bottom: 1px solid #195295;
+}
+
+
+/* brief information card */ 
+.brief-card {
+    width: 750px;
+    height: 254px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+   }
+   
+.brief-card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+}
+   
+.brief-card-button {
+    display: block;
+    width: 60%;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: #195295;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.3s ease-out;
+    text-decoration: none;
+}
+   
+.brief-card-text-body {
+    font-family: "Figtree", "sans-Serif";
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(134, 134, 134);
+}
+   
+.brief-card-text-title {
+    font-family: "Figtree", "sans-Serif";
+    font-weight: 700;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+   
+.brief-card:hover {
+    border-color: #195295;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+   
+.brief-card:hover>.brief-card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+/* staff*/
+
+.staff-card {
+    width: 320px;
+    border-radius: 0.75rem;
+    background: linear-gradient(rgba(25, 82, 149),rgba(5, 5, 5));
+    padding: 2rem;
+    margin:auto;
+}
+  
+.staff-card-title {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: #FAFAFA;
+    font-family: "Figtree", "sans-Serif";
+}
+  
+.staff-card-form {
+    margin-top: 1.5rem;
+}
+  
+.staff-card-input-group {
+    font-family: "Figtree", "sans-Serif";
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+  
+.staff-card-input-group label {
+    font-family: "Figtree", "sans-Serif";
+    display: block;
+    color: #FAFAFA;
+    margin-bottom: 4px;
+}
+  
+.staff-card-input-group>input {
+    width: 100%;
+    border-radius: 0.375rem;
+    border: 1px solid rgba(55, 65, 81, 1);
+    outline: 0;
+    background-color: rgba(17, 24, 39, 1);
+    padding: 0.75rem 1rem;
+    color: rgba(243, 244, 246, 1);
+}
+  
+.staff-card-input-group>input:focus {
+    border-color: rgba(167, 139, 250);
+}
+  
+.staff-card-forgot {
+    font-family: "Figtree", "sans-Serif";
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: #FAFAFA;
+    margin: 8px 0 14px 0;
+}
+  
+.staff-card-forgot a,.signup a {
+    font-family: "Figtree", "sans-Serif";
+    color: #FAFAFA;
+    text-decoration: none;
+    font-size: 14px;
+}
+  
+.forgot a:hover, .signup a:hover {
+    text-decoration: underline rgba(167, 139, 250, 1);
+}
+  
+.sign {
+    display: block;
+    width: 100%;
+    background-color: #2680EB;
+    padding: 0.75rem;
+    text-align: center;
+    color: #FAFAFA;
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: 600;
+}
+  
+.social-message {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+  
+.line {
+    height: 1px;
+    flex: 1 1 0%;
+    background-color: rgba(55, 65, 81, 1);
+}
+  
+.social-message .message {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgba(156, 163, 175, 1);
+}
+  
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+  
+.social-icons .icon {
+    border-radius: 0.125rem;
+    padding: 0.75rem;
+    border: none;
+    background-color: transparent;
+    margin-left: 8px;
+}
+  
+.social-icons .icon svg {
+    height: 1.25rem;
+    width: 1.25rem;
+    fill: #fff;
+}
+  
+.signup {
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: rgba(156, 163, 175, 1);
+}
+  
+
+/* MEDIA QUERIES */
+
+/* Hide the Previous/Next buttons on larger screens */
+@media (min-width: 319px) and (max-width: 499px) {
+    #tab-navigation {
+      display:none;
+    }
+    #small-screen-navigation {
+        display: block;
+    }
+    .brief-card {
+        height: 450px;
+        
+    }
+}
+
+  /* Show the tab navigation at 500px and above */
+@media (min-width: 800px) {
+    #tab-navigation {
+      display: flex;
+    }
+
+    #small-screen-navigation {
+        display: none;
+    }
+
+}
+

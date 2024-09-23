@@ -1,171 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>MamaBobo Restaurant</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSFM | Home</title>
+    <!-- main stylesheet-->
+    <link rel="stylesheet" href="main.css">
 
-    <!-- Favicon -->
-    <link href="img/logo.jpg" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- main Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <!-- favicon-->
+    <link rel="icon" type="image/x-icon" href="favicon.jpg">
 </head>
-
 <body>
-    <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
+
+    <!-- navigation menu-->
+    <header class="sticky top-0 inset-x-0 border-gray-200 dark:bg-neutral-800 dark:border-neutral-700 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full">
+        <nav class="relative w-full bg-gray-900 mx-auto md:flex md:items-center md:justify-between md:gap-3 px-4 sm:px-6 lg:px-8 py-2">
+          <!-- Logo w/ Collapse Button -->
+          <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html" class="flex-none rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80" aria-label="Preline">
+                <span class="inline-flex items-center gap-x-2 text-3xl text-lotion_white font-bold font-figtree dark:text-white">
+                    <img class="w-16 h-auto rounded-full" src="logo.jpg" alt="Logo">
+                    BSFM
+                </span>
+            </a>
+            <!-- End Logo -->
+      
+            <!-- Collapse Button -->
+            <div class="md:hidden">
+              <button type="button" class="hs-collapse-toggle relative size-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" id="hs-header-scrollspy-collapse" aria-expanded="false" aria-controls="hs-header-scrollspy" aria-label="Toggle navigation" data-hs-collapse="#hs-header-scrollspy">
+                <svg class="hs-collapse-open:hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+                <svg class="hs-collapse-open:block shrink-0 hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                <span class="sr-only">Toggle navigation</span>
+              </button>
             </div>
+            <!-- End Collapse Button -->
         </div>
-        <!-- Spinner End -->
+          <!-- End Logo w/ Collapse Button -->
+      
+          <!-- Collapse -->
+          <div id="hs-header-scrollspy" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block" aria-labelledby="hs-header-scrollspy-collapse">
+            <div class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500">
+              <div data-hs-scrollspy="#scrollspy" class="py-2 md:py-0 [--scrollspy-offset:220] md:[--scrollspy-offset:70]">
+                <div class="flex flex-col gap-x-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5 md:justify-center">
+                    <div class="flex flex-col md:flex-row gap-x-2 md:mx-auto">
+                        <a href="index.html" class="py-3 px-4 inline-flex items-center gap-2 bg-transparent text-sm font-medium font-figtree text-center text-lotion_white rounded-lg hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-neutral-500 dark:hover:text-blue-500 dark:focus:text-blue-500">
+                            Home
+                        </a>
+                        <div class="hs-dropdown relative inline-flex">
+                          <button id="hs-dropdown-slideup-animation" type="button" class="hs-dropdown-toggle py-3 px-4 inline-flex items-center gap-x-2 text-sm font-figtree font-medium text-lotion_white focus:outline-none disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                            Services
+                            <svg class="hs-dropdown-open:rotate-180 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                          </button>
+                        
+                          <div class="hs-dropdown-menu w-72 transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden z-10 duration-300 mt-2 min-w-60 bg-lotion_white shadow-md rounded-lg p-2 dark:bg-neutral-800 dark:border dark:border-neutral-700 dark:divide-neutral-700" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-slideup-animation">
+                            <a href="security_guard.html" class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-figtree hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
+                              <svg class="shrink-0 size-4 mt-0.5 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
 
+                                <defs>
+                                </defs>
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                  <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(32,143,232); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                                  <path d="M 45 72 c -0.252 0 -0.504 -0.048 -0.742 -0.143 c -11.395 -4.555 -18.545 -17.212 -21.859 -38.695 c -0.122 -0.792 0.239 -1.579 0.918 -2.002 l 20.625 -12.857 c 0.647 -0.403 1.469 -0.403 2.116 0 L 66.683 31.16 c 0.68 0.423 1.041 1.211 0.919 2.002 c -3.314 21.483 -10.465 34.141 -21.859 38.695 C 45.504 71.952 45.252 72 45 72 z M 26.559 33.853 C 29.631 52.533 35.673 63.666 45 67.829 c 9.327 -4.163 15.369 -15.296 18.441 -33.977 L 45 22.357 L 26.559 33.853 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+                              </svg>
+                                Security Guards
+                            </a>
+                            <a href="concierge_security.html" class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-figtree hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
+                              <svg class="shrink-0 size-4 mt-0.5 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
 
-        <!-- Navbar & Hero Start -->
-        <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <img class="logo_img" src="img/logo.jpg" alt="Logo">
-                    <span class="logo_green fw-bold"> MamaBobo <span class="logo_orange">Restaurant</span></span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <!-- <a href="about.html" class="nav-item nav-link">About</a> -->
-                        <a href="services.html" class="nav-item nav-link">Services</a>
-                        <!-- <a href="menu.html" class="nav-item nav-link">Menu</a> -->
-                        <a href="booking.html" class="nav-item nav-link">Booking</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Order</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="https://mamabobo.co.uk/?serviceType=Pickup&utm_source=GoogleRedirect&utm_medium=organic&rwg_token=AJKvS9WDQEzg3d3PSJxr2oVfbPOf0tAx7orgvXtcpvimAZIwaTXSYw56QtqVqhoQ1eTdSZsN4Ix8xzfXB4P4oJklOa2DejWSdw%3D%3D" class="dropdown-item">OrderYOYO</a>
-                                <a href="https://www.ubereats.com/gb/store/mama-bobo-restaurant/fBYs2Wk_XsKQX_xu53hhyw?diningMode=PICKUP&utm_campaign=place-action-link&utm_medium=organic&utm_source=google" class="dropdown-item">UberEats</a>
-                                <a href="https://www.just-eat.co.uk/restaurants-mama-bobo-africa-restaurant-ballynafoy/menu?serviceType=collection&utm_source=google&utm_medium=organic&utm_campaign=foodorder" class="dropdown-item">JustEats</a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                                <defs>
+                                </defs>
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                  <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(32,143,232); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                                  <path d="M 45 72 c -0.252 0 -0.504 -0.048 -0.742 -0.143 c -11.395 -4.555 -18.545 -17.212 -21.859 -38.695 c -0.122 -0.792 0.239 -1.579 0.918 -2.002 l 20.625 -12.857 c 0.647 -0.403 1.469 -0.403 2.116 0 L 66.683 31.16 c 0.68 0.423 1.041 1.211 0.919 2.002 c -3.314 21.483 -10.465 34.141 -21.859 38.695 C 45.504 71.952 45.252 72 45 72 z M 26.559 33.853 C 29.631 52.533 35.673 63.666 45 67.829 c 9.327 -4.163 15.369 -15.296 18.441 -33.977 L 45 22.357 L 26.559 33.853 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+                              </svg>
+                                Concierge/Reception Duties & Static Security Officers
+                            </a>
+                            <a href="mobile_security.html" class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-figtree hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
+                              <svg class="shrink-0 size-4 mt-0.5 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+
+                                <defs>
+                                </defs>
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                  <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(32,143,232); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                                  <path d="M 45 72 c -0.252 0 -0.504 -0.048 -0.742 -0.143 c -11.395 -4.555 -18.545 -17.212 -21.859 -38.695 c -0.122 -0.792 0.239 -1.579 0.918 -2.002 l 20.625 -12.857 c 0.647 -0.403 1.469 -0.403 2.116 0 L 66.683 31.16 c 0.68 0.423 1.041 1.211 0.919 2.002 c -3.314 21.483 -10.465 34.141 -21.859 38.695 C 45.504 71.952 45.252 72 45 72 z M 26.559 33.853 C 29.631 52.533 35.673 63.666 45 67.829 c 9.327 -4.163 15.369 -15.296 18.441 -33.977 L 45 22.357 L 26.559 33.853 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+                              </svg>
+                                Mobile Security Patrols
+                            </a>
+                            <a href="key_holding.html" class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-figtree hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
+                              <svg class="shrink-0 size-4 mt-0.5 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+
+                                <defs>
+                                </defs>
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                  <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(32,143,232); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                                  <path d="M 45 72 c -0.252 0 -0.504 -0.048 -0.742 -0.143 c -11.395 -4.555 -18.545 -17.212 -21.859 -38.695 c -0.122 -0.792 0.239 -1.579 0.918 -2.002 l 20.625 -12.857 c 0.647 -0.403 1.469 -0.403 2.116 0 L 66.683 31.16 c 0.68 0.423 1.041 1.211 0.919 2.002 c -3.314 21.483 -10.465 34.141 -21.859 38.695 C 45.504 71.952 45.252 72 45 72 z M 26.559 33.853 C 29.631 52.533 35.673 63.666 45 67.829 c 9.327 -4.163 15.369 -15.296 18.441 -33.977 L 45 22.357 L 26.559 33.853 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+                              </svg>
+                                Key Holding
+                            </a>
+                            <a href="retail_security.html" class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-figtree hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
+                              <svg class="shrink-0 size-4 mt-0.5 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+
+                                <defs>
+                                </defs>
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                  <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(32,143,232); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                                  <path d="M 45 72 c -0.252 0 -0.504 -0.048 -0.742 -0.143 c -11.395 -4.555 -18.545 -17.212 -21.859 -38.695 c -0.122 -0.792 0.239 -1.579 0.918 -2.002 l 20.625 -12.857 c 0.647 -0.403 1.469 -0.403 2.116 0 L 66.683 31.16 c 0.68 0.423 1.041 1.211 0.919 2.002 c -3.314 21.483 -10.465 34.141 -21.859 38.695 C 45.504 71.952 45.252 72 45 72 z M 26.559 33.853 C 29.631 52.533 35.673 63.666 45 67.829 c 9.327 -4.163 15.369 -15.296 18.441 -33.977 L 45 22.357 L 26.559 33.853 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+                              </svg>
+                                Retail Security
+                            </a>
+                            <a href="access_control.html" class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-figtree hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
+                              <svg class="shrink-0 size-4 mt-0.5 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+
+                                <defs>
+                                </defs>
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                  <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(32,143,232); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                                  <path d="M 45 72 c -0.252 0 -0.504 -0.048 -0.742 -0.143 c -11.395 -4.555 -18.545 -17.212 -21.859 -38.695 c -0.122 -0.792 0.239 -1.579 0.918 -2.002 l 20.625 -12.857 c 0.647 -0.403 1.469 -0.403 2.116 0 L 66.683 31.16 c 0.68 0.423 1.041 1.211 0.919 2.002 c -3.314 21.483 -10.465 34.141 -21.859 38.695 C 45.504 71.952 45.252 72 45 72 z M 26.559 33.853 C 29.631 52.533 35.673 63.666 45 67.829 c 9.327 -4.163 15.369 -15.296 18.441 -33.977 L 45 22.357 L 26.559 33.853 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+                              </svg>
+                                Access Control
+                            </a>
+                            <a href="construction_site.html" class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-figtree hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
+                              <svg class="shrink-0 size-4 mt-0.5 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+
+                                <defs>
+                                </defs>
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                  <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(32,143,232); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                                  <path d="M 45 72 c -0.252 0 -0.504 -0.048 -0.742 -0.143 c -11.395 -4.555 -18.545 -17.212 -21.859 -38.695 c -0.122 -0.792 0.239 -1.579 0.918 -2.002 l 20.625 -12.857 c 0.647 -0.403 1.469 -0.403 2.116 0 L 66.683 31.16 c 0.68 0.423 1.041 1.211 0.919 2.002 c -3.314 21.483 -10.465 34.141 -21.859 38.695 C 45.504 71.952 45.252 72 45 72 z M 26.559 33.853 C 29.631 52.533 35.673 63.666 45 67.829 c 9.327 -4.163 15.369 -15.296 18.441 -33.977 L 45 22.357 L 26.559 33.853 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+                              </svg>
+                                Construction Sites
+                            </a>
+                            <a href="property_security.html" class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-figtree hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
+                              <svg class="shrink-0 size-4 mt-0.5 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+
+                                <defs>
+                                </defs>
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                  <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(32,143,232); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                                  <path d="M 45 72 c -0.252 0 -0.504 -0.048 -0.742 -0.143 c -11.395 -4.555 -18.545 -17.212 -21.859 -38.695 c -0.122 -0.792 0.239 -1.579 0.918 -2.002 l 20.625 -12.857 c 0.647 -0.403 1.469 -0.403 2.116 0 L 66.683 31.16 c 0.68 0.423 1.041 1.211 0.919 2.002 c -3.314 21.483 -10.465 34.141 -21.859 38.695 C 45.504 71.952 45.252 72 45 72 z M 26.559 33.853 C 29.631 52.533 35.673 63.666 45 67.829 c 9.327 -4.163 15.369 -15.296 18.441 -33.977 L 45 22.357 L 26.559 33.853 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+                              </svg>
+                                Vacant Property Security
+                            </a>
+                            <a href="sub_contractor.html" class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-figtree hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
+                              <svg class="shrink-0 size-4 mt-0.5 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+
+                                <defs>
+                                </defs>
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                  <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(32,143,232); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                                  <path d="M 45 72 c -0.252 0 -0.504 -0.048 -0.742 -0.143 c -11.395 -4.555 -18.545 -17.212 -21.859 -38.695 c -0.122 -0.792 0.239 -1.579 0.918 -2.002 l 20.625 -12.857 c 0.647 -0.403 1.469 -0.403 2.116 0 L 66.683 31.16 c 0.68 0.423 1.041 1.211 0.919 2.002 c -3.314 21.483 -10.465 34.141 -21.859 38.695 C 45.504 71.952 45.252 72 45 72 z M 26.559 33.853 C 29.631 52.533 35.673 63.666 45 67.829 c 9.327 -4.163 15.369 -15.296 18.441 -33.977 L 45 22.357 L 26.559 33.853 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+                              </svg>
+                                Sub-Contractor
+                            </a>
+                          </div>
+                      </div>
+                      <!--- end of dropdown-->
+                        <a href="career.html" class="py-3 px-4 inline-flex items-center gap-2 bg-transparent text-sm font-medium font-figtree text-center text-lotion_white rounded-lg hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-neutral-500 dark:hover:text-blue-500 dark:focus:text-blue-500">
+                            Careers
+                        </a>
+                        <a href="about_us.html" class="py-3 px-4 inline-flex items-center gap-2 bg-transparent text-sm font-medium font-figtree text-center text-lotion_white rounded-lg hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-neutral-500 dark:hover:text-blue-500 dark:focus:text-blue-500">
+                            About Us
+                        </a>
                     </div>
-                    <a href="#booking" class="btn btn-primary py-2 px-4">Book A Table</a>
+                    <div class="">
+                        <div class="flex flex-col md:flex-row gap-x-2">
+                            <a href="staff.html" class="py-3 px-4 inline-flex items-center gap-2 hover:text-blue-600 text-sm font-medium font-figtree text-center text-lotion_white rounded-lg focus:outline-none dark:bg-neutral-700 dark:text-white">
+                                Staff
+                            </a>
+                            <a href="contact_us.html" class="py-3 px-4 inline-flex items-center gap-2 bg-blue_voilet text-sm font-medium font-figtree text-center text-lotion_white rounded-lg focus:outline-none focus:text-lotion_white dark:text-lotion_white  dark:focus:text-lotion_white dark:bg-neutral-700">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </nav>
-
-            <div class="container-xxl py-5 bg-dark hero-header mb-5">
-                <div class="container text-center my-5 pt-5 pb-4">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Layout</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Layout</li>
-                        </ol>
-                    </nav>
-                </div>
+              </div>
             </div>
+          </div>
+          <!-- End Collapse -->
+        </nav>
+      </header>
+      <!----- breadcrumb -->
+      <div class="p-6 h-28 bg-gradient-to-r from-blue_voilet to-vampire_black ">
+        <h2 class="font-bold font-figtree text-2xl text-lotion_white">Layout</h2>
+        <ol class="p-4 flex items-center whitespace-nowrap">
+          <li class="inline-flex items-center">
+            <a href="index.html" class="flex items-center font-figtree text-lg text-lotion_white hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-neutral-500 dark:hover:text-blue-500 dark:focus:text-blue-500">
+              Home
+            </a>
+            <svg class="shrink-0 mx-2 size-4 text-lotion_white dark:text-neutral-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m9 18 6-6-6-6"></path>
+            </svg>
+          </li>
+          <li class="inline-flex items-center">
+            <a href="about_us.html" class="flex items-center text-sm font-figtree text-lotion_white hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-neutral-500 dark:hover:text-blue-500 dark:focus:text-blue-500">
+              layout
+              <svg class="shrink-0 mx-2 size-4 text-lotion_white dark:text-neutral-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m9 18 6-6-6-6"></path>
+              </svg>
+            </a>
+          </li>
+        </ol>
+      </div>
+
+<div>container</div>
+  <!-- footer-->
+  <footer class="bg-gradient-to-r from-blue_voilet to-vampire_black mt-auto w-full max-w-[85rem] py-6 px-4 sm:px-4 lg:px-6 mx-auto">
+    <!-- Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+      <div class="col-span-full lg:col-span-1 lg:block">
+        <a class="flex-none rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80" href="#" aria-label="Preline">
+          <span class="inline-flex items-center gap-x-2 text-3xl text-lotion_white font-bold font-figtree dark:text-white">
+              <img class="w-16 h-auto rounded-full" src="logo.jpg" alt="Logo">
+              BSFM
+          </span>
+        </a>
+      </div>
+      <!-- End Col -->
+
+      <div>
+        <div class="mt-3 grid space-y-3 text-sm">
+          <p><a class="inline-flex gap-x-2 text-lotion_white focus:outline-none focus:text-lotion_white dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="index.html">Home</a></p>
+          <p><a class="inline-flex gap-x-2 text-lotion_white focus:outline-none focus:text-lotion_white dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="services.html">Services</a></p>
+          <p><a class="inline-flex gap-x-2 text-lotion_white focus:outline-none focus:text-lotion_white dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="career.html">Career</a></p>
+          <p><a class="inline-flex gap-x-2 text-lotion_white focus:outline-none focus:text-lotion_white dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="about_us.html">About Us</a></p>
+          <p><a class="inline-flex gap-x-2 text-lotion_white focus:outline-none focus:text-lotion_white dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="contact_us.html">Contact Us</a></p>
         </div>
-        <!-- Navbar & Hero End -->
+      </div>
+      <!-- End Col -->
 
-        <!--- MAIN CONTENT-->
-
-
-        <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="section-title ff-secondary text-start primary_orange fw-normal mb-4"><span class="primary_green">MamaBobo</span> Restaurant</h5>
-                        <a class="btn btn-link" href="about.html">About Us</a>
-                        <a class="btn btn-link" href="contact.html">Contact Us</a>
-                        <a class="btn btn-link" href="faq.html">Frequently Asked Questions</a>
-                        <a class="btn btn-link" href="privacy_policy.html">Privacy Policy</a>
-                        <a class="btn btn-link" href="terms.html">Terms & Condition</a>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h5>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>407 Ormeau Road, BT7 3GP</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+44 743 641 8993</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i><small>info@mamaboborestaurant.co.uk</small></p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social svg_icon" href="https://www.tiktok.com/@mamaboboafrica"><svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
-                                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
-                              </svg></a>
-                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/mamaboboafrica/"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/mamaboborestaurant?igsh=MTc0cmxxNTNjcTdxMQ=="><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h5>
-                        <p class="text-light fw-normal">Monday - <i>closed</i></p>
-                        <p class="text-light fw-normal">Tuesday - Friday</p>
-                        <p class="text-light fw-normal"><i>5pm - 9pm</i></p>
-                        <p class="text-light fw-normal">Saturday - <i>3pm - 9pm</i></p>
-                        <p class="text-light fw-normal">Sunday - <i>12pm - 6pm</i></p>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Offers & Rewards</h5>
-                        <p>Sign up for amazing offers, coupons and rewards.</p>
-                        <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">claim</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <span>MamaBobo Restaurant</span>, All Right Reserved.
-							Developed By <a class="border-bottom" href="https://hunkutech.com"><i>HUNKUTECH</i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div>
+        <div class="mt-3 grid space-y-3 text-sm">
+          <p><a class="inline-flex gap-x-2 text-lotion_white focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="terms.html">Terms & Conditions</a></p>
+          <p><a class="inline-flex gap-x-2 text-lotion_white focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="privacy.html">Privacy Policy</a></p>
         </div>
-        <!-- Footer End -->
-
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+      </div>
+      <!-- End Col -->
     </div>
+    <!-- End Grid -->
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <div class="pt-5 mt-5 border-t border-gray-200 dark:border-neutral-700">
+      <div class="sm:flex sm:justify-between sm:items-center">
+        <div class="flex flex-wrap items-center gap-3">
+          <div class="space-x-4 text-sm">
+            <p class="font-figtree text-sm inline-flex gap-x-2 text-lotion_white focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200">©2024 BUDLITE SECURITY & FACILITY MANAGEMENT LTD.</p>
+          </div>
+        </div>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+        <div class="flex flex-wrap justify-between items-center gap-3">
+          <!-- Social Brands -->
+          <div class="space-x-4">
+            <p class="font-figtree text-sm inline-flex gap-x-2 text-lotion_white focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">DEVELOPED BY <a href="www.hunkutech.com" class="text-bluey font-bold font-figtree">Joshua Hunkuten</a>.</p>
+          </div>
+          <!-- End Social Brands -->
+        </div>
+        <!-- End Col -->
+      </div>
+    </div>
+  </footer>
+
+    <!--- script-->
+    <script src="./script.js"></script>
+    <!--- preline ui -->
+    <script src="./node_modules/preline/dist/preline.js"></script>
+    <!--- flowbite ui-->
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 </body>
-
 </html>
