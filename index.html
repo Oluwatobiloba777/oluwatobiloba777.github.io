@@ -1,644 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BSFM | Home</title>
-    <!-- main stylesheet-->
-    <link rel="stylesheet" href="main.css">
+    <meta charset="utf-8">
+    <title>MamaBobo Restaurant</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-    <!-- favicon-->
-    <link rel="icon" type="image/x-icon" href="favicon.jpg">
+    <!-- Favicon -->
+    <link href="img/logo.jpg" type="image/x-icon" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-
-    <!-- navigation menu-->
-    <header class="sticky top-0 inset-x-0 border-gray-200 dark:bg-neutral-800 dark:border-neutral-700 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full">
-        <nav class="relative w-full bg-gray-900 mx-auto md:flex md:items-center md:justify-between md:gap-3 px-4 sm:px-6 lg:px-8 py-2">
-          <!-- Logo w/ Collapse Button -->
-          <div class="flex items-center justify-between">
-            <!-- Logo -->
-            <a class="flex-none rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80" href="#" aria-label="Preline">
-                <span class="inline-flex items-center gap-x-2 text-3xl text-lotion_white font-bold font-figtree dark:text-white">
-                    <img class="w-16 h-auto rounded-full" src="logo.jpg" alt="Logo">
-                    BSFM
-                </span>
-            </a>
-            <!-- End Logo -->
-      
-            <!-- Collapse Button -->
-            <div class="md:hidden">
-              <button type="button" class="hs-collapse-toggle relative size-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" id="hs-header-scrollspy-collapse" aria-expanded="false" aria-controls="hs-header-scrollspy" aria-label="Toggle navigation" data-hs-collapse="#hs-header-scrollspy">
-                <svg class="hs-collapse-open:hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
-                <svg class="hs-collapse-open:block shrink-0 hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-                <span class="sr-only">Toggle navigation</span>
-              </button>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
             </div>
-            <!-- End Collapse Button -->
         </div>
-          <!-- End Logo w/ Collapse Button -->
-      
-          <!-- Collapse -->
-          <div id="hs-header-scrollspy" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block" aria-labelledby="hs-header-scrollspy-collapse">
-            <div class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500">
-              <div data-hs-scrollspy="#scrollspy" class="py-2 md:py-0 [--scrollspy-offset:220] md:[--scrollspy-offset:70]">
-                <div class="flex flex-col gap-x-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5 md:justify-center">
-                    <div class="flex flex-col md:flex-row gap-x-2 md:mx-auto">
-                        <a href="index.html" class="py-3 px-4 inline-flex items-center gap-2 bg-transparent text-sm font-medium font-figtree text-center text-lotion_white rounded-lg hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-neutral-500 dark:hover:text-blue-500 dark:focus:text-blue-500">
-                            Home
-                        </a>
-                        <div class="hs-dropdown relative inline-flex">
-                          <button id="hs-dropdown-slideup-animation" type="button" class="hs-dropdown-toggle py-3 px-4 inline-flex items-center gap-x-2 text-sm font-figtree font-medium text-lotion_white focus:outline-none disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-                            Services
-                            <svg class="hs-dropdown-open:rotate-180 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-                          </button>
-                        
-                          <div class="hs-dropdown-menu w-72 transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden z-10 duration-300 mt-2 min-w-60 bg-lotion_white shadow-md rounded-lg p-2 dark:bg-neutral-800 dark:border dark:border-neutral-700 dark:divide-neutral-700" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-slideup-animation">
-                            <a href="security_guard.html" class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-figtree hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
-                              <svg class="shrink-0 size-4 mt-0.5 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+        <!-- Spinner End -->
 
-                                <defs>
-                                </defs>
-                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
-                                  <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(32,143,232); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
-                                  <path d="M 45 72 c -0.252 0 -0.504 -0.048 -0.742 -0.143 c -11.395 -4.555 -18.545 -17.212 -21.859 -38.695 c -0.122 -0.792 0.239 -1.579 0.918 -2.002 l 20.625 -12.857 c 0.647 -0.403 1.469 -0.403 2.116 0 L 66.683 31.16 c 0.68 0.423 1.041 1.211 0.919 2.002 c -3.314 21.483 -10.465 34.141 -21.859 38.695 C 45.504 71.952 45.252 72 45 72 z M 26.559 33.853 C 29.631 52.533 35.673 63.666 45 67.829 c 9.327 -4.163 15.369 -15.296 18.441 -33.977 L 45 22.357 L 26.559 33.853 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                                </g>
-                              </svg>
-                                Security Guards
-                            </a>
-                            <a href="concierge_security.html" class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-figtree hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
-                              <svg class="shrink-0 size-4 mt-0.5 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
 
-                                <defs>
-                                </defs>
-                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
-                                  <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(32,143,232); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
-                                  <path d="M 45 72 c -0.252 0 -0.504 -0.048 -0.742 -0.143 c -11.395 -4.555 -18.545 -17.212 -21.859 -38.695 c -0.122 -0.792 0.239 -1.579 0.918 -2.002 l 20.625 -12.857 c 0.647 -0.403 1.469 -0.403 2.116 0 L 66.683 31.16 c 0.68 0.423 1.041 1.211 0.919 2.002 c -3.314 21.483 -10.465 34.141 -21.859 38.695 C 45.504 71.952 45.252 72 45 72 z M 26.559 33.853 C 29.631 52.533 35.673 63.666 45 67.829 c 9.327 -4.163 15.369 -15.296 18.441 -33.977 L 45 22.357 L 26.559 33.853 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                                </g>
-                              </svg>
-                                Concierge/Reception Duties & Static Security Officers
-                            </a>
-                            <a href="mobile_security.html" class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-figtree hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
-                              <svg class="shrink-0 size-4 mt-0.5 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
-
-                                <defs>
-                                </defs>
-                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
-                                  <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(32,143,232); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
-                                  <path d="M 45 72 c -0.252 0 -0.504 -0.048 -0.742 -0.143 c -11.395 -4.555 -18.545 -17.212 -21.859 -38.695 c -0.122 -0.792 0.239 -1.579 0.918 -2.002 l 20.625 -12.857 c 0.647 -0.403 1.469 -0.403 2.116 0 L 66.683 31.16 c 0.68 0.423 1.041 1.211 0.919 2.002 c -3.314 21.483 -10.465 34.141 -21.859 38.695 C 45.504 71.952 45.252 72 45 72 z M 26.559 33.853 C 29.631 52.533 35.673 63.666 45 67.829 c 9.327 -4.163 15.369 -15.296 18.441 -33.977 L 45 22.357 L 26.559 33.853 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                                </g>
-                              </svg>
-                                Mobile Security Patrols
-                            </a>
-                            <a href="key_holding.html" class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-figtree hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
-                              <svg class="shrink-0 size-4 mt-0.5 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
-
-                                <defs>
-                                </defs>
-                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
-                                  <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(32,143,232); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
-                                  <path d="M 45 72 c -0.252 0 -0.504 -0.048 -0.742 -0.143 c -11.395 -4.555 -18.545 -17.212 -21.859 -38.695 c -0.122 -0.792 0.239 -1.579 0.918 -2.002 l 20.625 -12.857 c 0.647 -0.403 1.469 -0.403 2.116 0 L 66.683 31.16 c 0.68 0.423 1.041 1.211 0.919 2.002 c -3.314 21.483 -10.465 34.141 -21.859 38.695 C 45.504 71.952 45.252 72 45 72 z M 26.559 33.853 C 29.631 52.533 35.673 63.666 45 67.829 c 9.327 -4.163 15.369 -15.296 18.441 -33.977 L 45 22.357 L 26.559 33.853 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                                </g>
-                              </svg>
-                                Key Holding
-                            </a>
-                            <a href="retail_security.html" class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-figtree hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
-                              <svg class="shrink-0 size-4 mt-0.5 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
-
-                                <defs>
-                                </defs>
-                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
-                                  <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(32,143,232); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
-                                  <path d="M 45 72 c -0.252 0 -0.504 -0.048 -0.742 -0.143 c -11.395 -4.555 -18.545 -17.212 -21.859 -38.695 c -0.122 -0.792 0.239 -1.579 0.918 -2.002 l 20.625 -12.857 c 0.647 -0.403 1.469 -0.403 2.116 0 L 66.683 31.16 c 0.68 0.423 1.041 1.211 0.919 2.002 c -3.314 21.483 -10.465 34.141 -21.859 38.695 C 45.504 71.952 45.252 72 45 72 z M 26.559 33.853 C 29.631 52.533 35.673 63.666 45 67.829 c 9.327 -4.163 15.369 -15.296 18.441 -33.977 L 45 22.357 L 26.559 33.853 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                                </g>
-                              </svg>
-                                Retail Security
-                            </a>
-                            <a href="access_control.html" class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-figtree hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
-                              <svg class="shrink-0 size-4 mt-0.5 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
-
-                                <defs>
-                                </defs>
-                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
-                                  <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(32,143,232); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
-                                  <path d="M 45 72 c -0.252 0 -0.504 -0.048 -0.742 -0.143 c -11.395 -4.555 -18.545 -17.212 -21.859 -38.695 c -0.122 -0.792 0.239 -1.579 0.918 -2.002 l 20.625 -12.857 c 0.647 -0.403 1.469 -0.403 2.116 0 L 66.683 31.16 c 0.68 0.423 1.041 1.211 0.919 2.002 c -3.314 21.483 -10.465 34.141 -21.859 38.695 C 45.504 71.952 45.252 72 45 72 z M 26.559 33.853 C 29.631 52.533 35.673 63.666 45 67.829 c 9.327 -4.163 15.369 -15.296 18.441 -33.977 L 45 22.357 L 26.559 33.853 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                                </g>
-                              </svg>
-                                Access Control
-                            </a>
-                            <a href="construction_site.html" class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-figtree hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
-                              <svg class="shrink-0 size-4 mt-0.5 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
-
-                                <defs>
-                                </defs>
-                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
-                                  <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(32,143,232); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
-                                  <path d="M 45 72 c -0.252 0 -0.504 -0.048 -0.742 -0.143 c -11.395 -4.555 -18.545 -17.212 -21.859 -38.695 c -0.122 -0.792 0.239 -1.579 0.918 -2.002 l 20.625 -12.857 c 0.647 -0.403 1.469 -0.403 2.116 0 L 66.683 31.16 c 0.68 0.423 1.041 1.211 0.919 2.002 c -3.314 21.483 -10.465 34.141 -21.859 38.695 C 45.504 71.952 45.252 72 45 72 z M 26.559 33.853 C 29.631 52.533 35.673 63.666 45 67.829 c 9.327 -4.163 15.369 -15.296 18.441 -33.977 L 45 22.357 L 26.559 33.853 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                                </g>
-                              </svg>
-                                Construction Sites
-                            </a>
-                            <a href="property_security.html" class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-figtree hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
-                              <svg class="shrink-0 size-4 mt-0.5 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
-
-                                <defs>
-                                </defs>
-                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
-                                  <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(32,143,232); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
-                                  <path d="M 45 72 c -0.252 0 -0.504 -0.048 -0.742 -0.143 c -11.395 -4.555 -18.545 -17.212 -21.859 -38.695 c -0.122 -0.792 0.239 -1.579 0.918 -2.002 l 20.625 -12.857 c 0.647 -0.403 1.469 -0.403 2.116 0 L 66.683 31.16 c 0.68 0.423 1.041 1.211 0.919 2.002 c -3.314 21.483 -10.465 34.141 -21.859 38.695 C 45.504 71.952 45.252 72 45 72 z M 26.559 33.853 C 29.631 52.533 35.673 63.666 45 67.829 c 9.327 -4.163 15.369 -15.296 18.441 -33.977 L 45 22.357 L 26.559 33.853 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                                </g>
-                              </svg>
-                                Vacant Property Security
-                            </a>
-                            <a href="sub_contractor.html" class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-figtree hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
-                              <svg class="shrink-0 size-4 mt-0.5 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
-
-                                <defs>
-                                </defs>
-                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
-                                  <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(32,143,232); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
-                                  <path d="M 45 72 c -0.252 0 -0.504 -0.048 -0.742 -0.143 c -11.395 -4.555 -18.545 -17.212 -21.859 -38.695 c -0.122 -0.792 0.239 -1.579 0.918 -2.002 l 20.625 -12.857 c 0.647 -0.403 1.469 -0.403 2.116 0 L 66.683 31.16 c 0.68 0.423 1.041 1.211 0.919 2.002 c -3.314 21.483 -10.465 34.141 -21.859 38.695 C 45.504 71.952 45.252 72 45 72 z M 26.559 33.853 C 29.631 52.533 35.673 63.666 45 67.829 c 9.327 -4.163 15.369 -15.296 18.441 -33.977 L 45 22.357 L 26.559 33.853 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                                </g>
-                              </svg>
-                                Sub-Contractor
-                            </a>
-                          </div>
-                      </div>
-                      <!--- end of dropdown-->
-                        <a href="career.html" class="py-3 px-4 inline-flex items-center gap-2 bg-transparent text-sm font-medium font-figtree text-center text-lotion_white rounded-lg hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-neutral-500 dark:hover:text-blue-500 dark:focus:text-blue-500">
-                            Careers
-                        </a>
-                        <a href="about_us.html" class="py-3 px-4 inline-flex items-center gap-2 bg-transparent text-sm font-medium font-figtree text-center text-lotion_white rounded-lg hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-neutral-500 dark:hover:text-blue-500 dark:focus:text-blue-500">
-                            About Us
-                        </a>
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <img class="logo_img" src="img/logo.jpg" alt="Logo">
+                    <span class="logo_green fw-bold"> MamaBobo <span class="logo_orange">Restaurant</span></span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <!-- <a href="about.html" class="nav-item nav-link">About</a> -->
+                        <a href="services.html" class="nav-item nav-link">Services</a>
+                        <!-- <a href="menu.html" class="nav-item nav-link">Menu</a> -->
+                        <a href="booking.html" class="nav-item nav-link">Booking</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Order</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="https://mamabobo.co.uk/?serviceType=Pickup&utm_source=GoogleRedirect&utm_medium=organic&rwg_token=AJKvS9WDQEzg3d3PSJxr2oVfbPOf0tAx7orgvXtcpvimAZIwaTXSYw56QtqVqhoQ1eTdSZsN4Ix8xzfXB4P4oJklOa2DejWSdw%3D%3D" class="dropdown-item">OrderYOYO</a>
+                                <a href="https://www.ubereats.com/gb/store/mama-bobo-restaurant/fBYs2Wk_XsKQX_xu53hhyw?diningMode=PICKUP&utm_campaign=place-action-link&utm_medium=organic&utm_source=google" class="dropdown-item">UberEats</a>
+                                <a href="https://www.just-eat.co.uk/restaurants-mama-bobo-africa-restaurant-ballynafoy/menu?serviceType=collection&utm_source=google&utm_medium=organic&utm_campaign=foodorder" class="dropdown-item">JustEats</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                     </div>
-                    <div class="">
-                        <div class="flex flex-col md:flex-row gap-x-2">
-                            <a href="staff.html" class="py-3 px-4 inline-flex items-center gap-2 hover:text-blue-600 text-sm font-medium font-figtree text-center text-lotion_white rounded-lg focus:outline-none dark:bg-neutral-700 dark:text-white">
-                                Staff
-                            </a>
-                            <a href="contact_us.html" class="py-3 px-4 inline-flex items-center gap-2 bg-blue_voilet text-sm font-medium font-figtree text-center text-lotion_white rounded-lg focus:outline-none focus:text-lotion_white dark:text-lotion_white  dark:focus:text-lotion_white dark:bg-neutral-700">
-                                Contact Us
-                            </a>
+                    <a href="#booking" class="btn btn-primary py-2 px-4">Book A Table</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container my-5 py-5">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="display-3 text-white animated slideInLeft">Authentic <br>Nigerian Cuisine</h1>
+                            <p class="text-white animated slideInLeft mb-4 pb-2">Come and taste why Nigerian food is so popular.</p>
+                            <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Table</a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                            <img class="img-fluid" src="img/hero/hero.png" alt="">
                         </div>
                     </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <!-- End Collapse -->
-        </nav>
-      </header>
-      <!-- Hero -->
-    <div class="mx-auto p-4 w-full sm:px-4 lg:px-8 bg-cover bg-center bg-no-repeat" style="background-image: url(./bg-hero.jpg);">
-      <!-- Grid -->
-      <div class="grid text-center gap-4 md:gap-10 xl:gap-20 md:items-center ">
-        <!--- col -->
-        <div class="">
-          <h1 class="block text-4xl font-bold font-figtree text-lotion_white sm:text-4xl lg:text-8xl lg:leading-tight dark:text-white">Budlite Security and Facility Management Ltd</h1>
-          <p class="mt-3 text-lg text-lotion_white dark:text-neutral-400">We are an elite security firm specializing in identifying risk and developing customized solutions for our clients.</p>
-
-          <!-- Buttons -->
-          <div class="mt-7 mb-10 justify-center grid gap-3 w-full sm:inline-flex">
-            <a href="about_us.html" class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium font-figtree rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
-              Who are we
-              <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-            </a>
-            <a href="contact_us.html" class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium font-figtree rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
-              Contact Us
-            </a>
-          </div>
-          <!-- End Buttons -->
         </div>
-        <!-- End col -->
-      </div>
-      <!-- End Grid -->
-    </div>
-    <!-- End Hero -->
-  <!--- services -->
-  <div class="w-full">
-    <h6 class="font-bold font-figtree p-4 text-blue_voilet">SERVICES</h6>
-    <h1 class="font-medium font-figtree text-4xl p-4 md:text-6xl">What we help with</h1>
-    <div class="p-4 grid grid-cols-1 md:grid-cols-5 gap-6 justify-items-center mx-auto"> 
-      <div class="service-card">
-        <div class="service-card-header">
-          <div class="service-card-img-box">
-            <svg  viewBox="0 0 48 48" fill="#FAFAFA" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6417 30.2284C16.8138 30.1864 16.9877 30.1671 17.1596 30.1691C17.4439 30.1724 17.7133 30.2966 17.9005 30.5105L24 37.4814L30.0995 30.5105C30.2867 30.2966 30.5561 30.1724 30.8404 30.1691C31.0123 30.1671 31.1862 30.1864 31.3583 30.2284L31.3583 30.2284C34.1198 30.902 36.9605 31.9383 39.1361 33.3669C41.289 34.7805 43 36.7267 43 39.2498V44C43 44.5523 42.5523 45 42 45H6C5.44772 45 5 44.5523 5 44V39.2498C5 36.7267 6.71103 34.7805 8.86388 33.3669C11.0395 31.9383 13.8802 30.902 16.6417 30.2284L16.6417 30.2284ZM16.7713 32.2573C14.2484 32.9006 11.7911 33.8374 9.96164 35.0387C8.0262 36.3096 7 37.7293 7 39.2498V43H41V39.2498C41 37.7293 39.9738 36.3096 38.0384 35.0387C36.2089 33.8374 33.7516 32.9006 31.2286 32.2573L24.7526 39.6585C24.5627 39.8755 24.2884 40 24 40C23.7116 40 23.4373 39.8755 23.2474 39.6585L16.7713 32.2573ZM31.1214 31.1997L31.1214 31.1997L31.1214 31.1997Z" fill="#FAFAFA"/>
-              <path d="M36 37C36 37 34 36 33 35C32 36 30 37 30 37C30 37 31.0474 41 33 41C34.9526 41 36 37 36 37Z" fill="#FAFAFA"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 29C20.5 27.8954 21.3954 27 22.5 27H25.5C26.6046 27 27.5 27.8954 27.5 29V30.382C27.5 31.0488 27.1683 31.6653 26.6267 32.0345L27.4806 36.3039L25.5194 36.6961L24.5194 31.6961C24.431 31.2539 24.6494 30.8072 25.0528 30.6056L25.5 30.382V29H22.5V30.5858L23.2071 31.2929C23.4489 31.5347 23.5504 31.8832 23.4762 32.2169L22.4762 36.7169L20.5238 36.2831L21.4047 32.3189L21.0858 32C20.7107 31.6249 20.5 31.1162 20.5 30.5858V29Z" fill="#FAFAFA"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M15 17V15H17V17C17 20.866 20.134 24 24 24C27.866 24 31 20.866 31 17V15H33V17C33 21.9706 28.9706 26 24 26C19.0294 26 15 21.9706 15 17Z" fill="#FAFAFA"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1592 3.01274L24 3.99998L23.8408 3.01274L24 2.98706L24.1592 3.01274ZM34.0042 13.3975C34.0255 13.3735 34.0475 13.3483 34.0702 13.3219C34.289 13.0679 34.5747 12.6987 34.8589 12.2219C35.4274 11.2683 36 9.86702 36 8.09676C36 7.39198 35.5854 6.86089 35.1964 6.5107C34.7934 6.14783 34.2664 5.83935 33.7125 5.57457C32.5968 5.04124 31.1507 4.58291 29.7578 4.21122C28.3538 3.83654 26.9554 3.53735 25.9115 3.33225C25.3886 3.22951 24.9525 3.14995 24.6463 3.09596C24.4932 3.06895 24.3725 3.04831 24.2895 3.03435L24.1941 3.01844L24.1688 3.0143L24.1592 3.01274C24.159 3.01271 24.1592 3.01274 24 3.99998C23.8408 3.01274 23.841 3.01271 23.8408 3.01274L23.8312 3.0143L23.8059 3.01844L23.7105 3.03435C23.6275 3.04831 23.5068 3.06895 23.3537 3.09596C23.0475 3.14995 22.6114 3.22951 22.0885 3.33225C21.0446 3.53735 19.6462 3.83654 18.2422 4.21122C16.8493 4.58291 15.4032 5.04124 14.2875 5.57457C13.7336 5.83935 13.2066 6.14783 12.8036 6.5107C12.4146 6.86089 12 7.39199 12 8.09676C12 9.86688 12.5726 11.2681 13.1411 12.2217C13.4253 12.6985 13.7109 13.0678 13.9297 13.3219C13.9525 13.3483 13.9745 13.3734 13.9958 13.3974C14.0057 13.5291 14.0258 13.6792 14.0625 13.8431C14.1859 14.3952 14.4899 15.0735 15.1572 15.7189C16.4709 16.9892 19.0445 18 24 18C28.9555 18 31.5291 16.9892 32.8428 15.7189C33.5101 15.0735 33.8141 14.3952 33.9375 13.8431C33.9742 13.6792 33.9943 13.5292 34.0042 13.3975ZM31.7015 14H16.2985C16.3655 14.09 16.4474 14.1843 16.5475 14.2811C17.3021 15.0108 19.2284 16 24 16C28.7716 16 30.6979 15.0108 31.4525 14.2811C31.5526 14.1843 31.6345 14.09 31.7015 14ZM15.4308 12H32.5692C32.724 11.8186 32.9319 11.5485 33.1411 11.1977C33.5667 10.4837 33.9885 9.45184 33.9998 8.15026C33.9826 8.12431 33.9429 8.0733 33.8583 7.99708C33.6598 7.81837 33.3273 7.60719 32.85 7.37902C31.9032 6.92647 30.5993 6.50576 29.2422 6.14359C27.8962 5.78439 26.5446 5.49487 25.526 5.29473C25.0176 5.19485 24.5944 5.11766 24.299 5.06556C24.1761 5.04388 24.0754 5.02656 24 5.01378C23.9246 5.02656 23.8239 5.04388 23.701 5.06556C23.4056 5.11766 22.9824 5.19485 22.474 5.29473C21.4554 5.49487 20.1038 5.78439 18.7578 6.14359C17.4007 6.50576 16.0968 6.92647 15.15 7.37902C14.6727 7.60719 14.3402 7.81837 14.1417 7.99708C14.0571 8.0733 14.0174 8.12431 14.0002 8.15026C14.0115 9.45167 14.4333 10.4835 14.8589 11.1976C15.0681 11.5485 15.276 11.8185 15.4308 12Z" fill="#FAFAFA"/>
-              <path d="M26 9C26 10.1046 25.1046 11 24 11C22.8954 11 22 10.1046 22 9C22 7.89543 22.8954 7 24 7C25.1046 7 26 7.89543 26 9Z" fill="#FAFAFA"/>
-            </svg>
-          </div>
-          <span class="service-card-title">Security Guards</span>
-        </div>
+        <!-- Navbar & Hero End -->
 
-        <div class="service-card-content">
-          <p>
-            BSFM is one of the UK’s most trusted providers of security guards. We offer a comprehensive range of services from commercial security...
-          </p>
 
-          <a href="security_guard.html" class="service-card-btn-link">Read More...</a>
-        </div>
-      </div>
-      <!--- concierge-->
-      <div>
-        <div class="service-card">
-          <div class="service-card-header">
-            <div class="service-card-img-box">
-              <svg viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#FAFAFA;stroke-miterlimit:10;stroke-width:1.91px;}</style></defs><path class="cls-1" d="M8.17,1.5h7.65a0,0,0,0,1,0,0V8.2A3.83,3.83,0,0,1,12,12h0A3.83,3.83,0,0,1,8.17,8.2V1.5a0,0,0,0,1,0,0Z"/><line class="cls-1" x1="8.17" y1="5.33" x2="18.7" y2="5.33"/><path class="cls-1" d="M4.35,23.5V19.67A7.65,7.65,0,0,1,12,12h0a7.65,7.65,0,0,1,7.65,7.65V23.5"/><line class="cls-1" x1="9.13" y1="17.76" x2="11.04" y2="17.76"/><line class="cls-1" x1="9.13" y1="21.59" x2="11.04" y2="21.59"/><polyline class="cls-1" points="8.93 12.66 12.96 15.85 12.96 23.5"/></svg>
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item service_card rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                                <h5>Dine In</h5>
+                                <p class="service_paragraph">Step into MamaBobo Restaurant  and immerse yourself in a truly Nigerian dining experience. Our welcoming atmosphere is perfect for family meals, friendly gatherings, or a romantic dinner. Enjoy the rich tapestry of flavors that our authentic dishes offer, all served in a vibrant setting inspired by the beauty and culture of Nigeria. Whether it’s a casual lunch or a special dinner, dining with us is always an occasion to remember.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6  wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item service_card rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-truck text-primary mb-4"></i>
+                                <h5>Delivery</h5>
+                                <p class="service_paragraph">Savor the flavors of Nigerian Cuisines from the comfort of your own home with MamaBobo’s delivery service. We’ve partnered with <a href="https://mamabobo.co.uk/?serviceType=Pickup&utm_source=GoogleRedirect&utm_medium=organic&rwg_token=AJKvS9WDQEzg3d3PSJxr2oVfbPOf0tAx7orgvXtcpvimAZIwaTXSYw56QtqVqhoQ1eTdSZsN4Ix8xzfXB4P4oJklOa2DejWSdw%3D%3D" style="text-decoration: none;"><i>OrderYOYO</i></a>, <a href="https://www.just-eat.co.uk/restaurants-mama-bobo-africa-restaurant-ballynafoy/menu?serviceType=collection&utm_source=google&utm_medium=organic&utm_campaign=foodorder" style="text-decoration: none;"><i>Just Eats</i></a> and <a href="https://www.ubereats.com/gb/store/mama-bobo-restaurant/fBYs2Wk_XsKQX_xu53hhyw?diningMode=PICKUP&utm_campaign=place-action-link&utm_medium=organic&utm_source=google" style="text-decoration: none;"><i>UberEats</i></a> to bring you your favourite dishes quickly and conveniently. Whether you're looking for a comforting meal at home or planning a feast with friends, our delivery service ensures that every order is packed with care and delivered right to your door. Explore our menu on <a href="https://mamabobo.co.uk/?serviceType=Pickup&utm_source=GoogleRedirect&utm_medium=organic&rwg_token=AJKvS9WDQEzg3d3PSJxr2oVfbPOf0tAx7orgvXtcpvimAZIwaTXSYw56QtqVqhoQ1eTdSZsN4Ix8xzfXB4P4oJklOa2DejWSdw%3D%3D" style="text-decoration: none;"><i>OrderYOYO</i></a>, <a href="https://www.just-eat.co.uk/restaurants-mama-bobo-africa-restaurant-ballynafoy/menu?serviceType=collection&utm_source=google&utm_medium=organic&utm_campaign=foodorder" style="text-decoration: none;"><i>Just Eats</i></a> and <a href="https://www.ubereats.com/gb/store/mama-bobo-restaurant/fBYs2Wk_XsKQX_xu53hhyw?diningMode=PICKUP&utm_campaign=place-action-link&utm_medium=organic&utm_source=google" style="text-decoration: none;"><i>UberEats</i></a> and enjoy a taste of Nigeria anytime, anywhere.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item service_card rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-utensils text-primary mb-4"></i> 
+                                <h5>Catering</h5>
+                                <p class="service_paragraph">At MamaBobo’s, we bring the unique flavors of Nigerian Cuisines directly to your event with our bespoke catering services. Whether you are hosting a wedding, a corporate event, or a birthday, we offer customized menus that cater to a variety of tastes and dietary needs. Our dedicated team ensures that each dish is as delightful and memorable as your special occasion. Contact us to discuss how we can tailor our offerings to your event’s needs and make your gathering truly exceptional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <span class="service-card-title">Concierge/Reception Duties & Static Security Officers</span>
-          </div>
-  
-          <div class="service-card-content">
-            <p>
-              BSFM knows that the smallest detail can make a huge difference when it comes to concierge,...
-            </p>
-  
-            <a href="concierge_security.html" class="service-card-btn-link">Read More...</a>
-          </div>
         </div>
-      </div>
-      <!--- mobile patrol-->
-      <div>
-        <div class="service-card">
-          <div class="service-card-header">
-            <div class="service-card-img-box">
-              <svg  viewBox="0 0 48 48" fill="#FAFAFA" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6417 30.2284C16.8138 30.1864 16.9877 30.1671 17.1596 30.1691C17.4439 30.1724 17.7133 30.2966 17.9005 30.5105L24 37.4814L30.0995 30.5105C30.2867 30.2966 30.5561 30.1724 30.8404 30.1691C31.0123 30.1671 31.1862 30.1864 31.3583 30.2284L31.3583 30.2284C34.1198 30.902 36.9605 31.9383 39.1361 33.3669C41.289 34.7805 43 36.7267 43 39.2498V44C43 44.5523 42.5523 45 42 45H6C5.44772 45 5 44.5523 5 44V39.2498C5 36.7267 6.71103 34.7805 8.86388 33.3669C11.0395 31.9383 13.8802 30.902 16.6417 30.2284L16.6417 30.2284ZM16.7713 32.2573C14.2484 32.9006 11.7911 33.8374 9.96164 35.0387C8.0262 36.3096 7 37.7293 7 39.2498V43H41V39.2498C41 37.7293 39.9738 36.3096 38.0384 35.0387C36.2089 33.8374 33.7516 32.9006 31.2286 32.2573L24.7526 39.6585C24.5627 39.8755 24.2884 40 24 40C23.7116 40 23.4373 39.8755 23.2474 39.6585L16.7713 32.2573ZM31.1214 31.1997L31.1214 31.1997L31.1214 31.1997Z" fill="#FAFAFA"/>
-                <path d="M36 37C36 37 34 36 33 35C32 36 30 37 30 37C30 37 31.0474 41 33 41C34.9526 41 36 37 36 37Z" fill="#FAFAFA"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 29C20.5 27.8954 21.3954 27 22.5 27H25.5C26.6046 27 27.5 27.8954 27.5 29V30.382C27.5 31.0488 27.1683 31.6653 26.6267 32.0345L27.4806 36.3039L25.5194 36.6961L24.5194 31.6961C24.431 31.2539 24.6494 30.8072 25.0528 30.6056L25.5 30.382V29H22.5V30.5858L23.2071 31.2929C23.4489 31.5347 23.5504 31.8832 23.4762 32.2169L22.4762 36.7169L20.5238 36.2831L21.4047 32.3189L21.0858 32C20.7107 31.6249 20.5 31.1162 20.5 30.5858V29Z" fill="#FAFAFA"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M15 17V15H17V17C17 20.866 20.134 24 24 24C27.866 24 31 20.866 31 17V15H33V17C33 21.9706 28.9706 26 24 26C19.0294 26 15 21.9706 15 17Z" fill="#FAFAFA"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1592 3.01274L24 3.99998L23.8408 3.01274L24 2.98706L24.1592 3.01274ZM34.0042 13.3975C34.0255 13.3735 34.0475 13.3483 34.0702 13.3219C34.289 13.0679 34.5747 12.6987 34.8589 12.2219C35.4274 11.2683 36 9.86702 36 8.09676C36 7.39198 35.5854 6.86089 35.1964 6.5107C34.7934 6.14783 34.2664 5.83935 33.7125 5.57457C32.5968 5.04124 31.1507 4.58291 29.7578 4.21122C28.3538 3.83654 26.9554 3.53735 25.9115 3.33225C25.3886 3.22951 24.9525 3.14995 24.6463 3.09596C24.4932 3.06895 24.3725 3.04831 24.2895 3.03435L24.1941 3.01844L24.1688 3.0143L24.1592 3.01274C24.159 3.01271 24.1592 3.01274 24 3.99998C23.8408 3.01274 23.841 3.01271 23.8408 3.01274L23.8312 3.0143L23.8059 3.01844L23.7105 3.03435C23.6275 3.04831 23.5068 3.06895 23.3537 3.09596C23.0475 3.14995 22.6114 3.22951 22.0885 3.33225C21.0446 3.53735 19.6462 3.83654 18.2422 4.21122C16.8493 4.58291 15.4032 5.04124 14.2875 5.57457C13.7336 5.83935 13.2066 6.14783 12.8036 6.5107C12.4146 6.86089 12 7.39199 12 8.09676C12 9.86688 12.5726 11.2681 13.1411 12.2217C13.4253 12.6985 13.7109 13.0678 13.9297 13.3219C13.9525 13.3483 13.9745 13.3734 13.9958 13.3974C14.0057 13.5291 14.0258 13.6792 14.0625 13.8431C14.1859 14.3952 14.4899 15.0735 15.1572 15.7189C16.4709 16.9892 19.0445 18 24 18C28.9555 18 31.5291 16.9892 32.8428 15.7189C33.5101 15.0735 33.8141 14.3952 33.9375 13.8431C33.9742 13.6792 33.9943 13.5292 34.0042 13.3975ZM31.7015 14H16.2985C16.3655 14.09 16.4474 14.1843 16.5475 14.2811C17.3021 15.0108 19.2284 16 24 16C28.7716 16 30.6979 15.0108 31.4525 14.2811C31.5526 14.1843 31.6345 14.09 31.7015 14ZM15.4308 12H32.5692C32.724 11.8186 32.9319 11.5485 33.1411 11.1977C33.5667 10.4837 33.9885 9.45184 33.9998 8.15026C33.9826 8.12431 33.9429 8.0733 33.8583 7.99708C33.6598 7.81837 33.3273 7.60719 32.85 7.37902C31.9032 6.92647 30.5993 6.50576 29.2422 6.14359C27.8962 5.78439 26.5446 5.49487 25.526 5.29473C25.0176 5.19485 24.5944 5.11766 24.299 5.06556C24.1761 5.04388 24.0754 5.02656 24 5.01378C23.9246 5.02656 23.8239 5.04388 23.701 5.06556C23.4056 5.11766 22.9824 5.19485 22.474 5.29473C21.4554 5.49487 20.1038 5.78439 18.7578 6.14359C17.4007 6.50576 16.0968 6.92647 15.15 7.37902C14.6727 7.60719 14.3402 7.81837 14.1417 7.99708C14.0571 8.0733 14.0174 8.12431 14.0002 8.15026C14.0115 9.45167 14.4333 10.4835 14.8589 11.1976C15.0681 11.5485 15.276 11.8185 15.4308 12Z" fill="#FAFAFA"/>
-                <path d="M26 9C26 10.1046 25.1046 11 24 11C22.8954 11 22 10.1046 22 9C22 7.89543 22.8954 7 24 7C25.1046 7 26 7.89543 26 9Z" fill="#FAFAFA"/>
-              </svg>
+        <!-- Service End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/about/1.jpg">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-90 h-70 wow zoomIn" data-wow-delay="0.3s" src="img/about/2.jpg" style="margin-top: 25%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-90 h-70 wow zoomIn" data-wow-delay="0.5s" src="img/about/3.jpg">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/about/4.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
+                        <h2 class="mb-4">Welcome to<i class="fw-bold primary_green"> MamaBobo<span class="fw-bold primary_orange"> Restaurant</span></i></h2>
+                        <p class="mb-4">"Embark on a culinary journey with us at MamaBobo Restaurant by sitting in or getting takeaway, 
+                            where authentic Nigerian flavors come to life. As the first Nigerian restaurant in Northern Ireland, 
+                            we're dedicated to bringing you the finest West African ingredients and delectable dishes. 
+                            From our shelves stocked with vibrant spices and ingredients to our restaurant offering mouthwatering, 
+                            healthy Nigerian cuisine, we invite you to savor the tastes of tradition and innovation. Experience the 
+                            warmth of Nigerian hospitality and the vibrant tapestry of our culture through every bite."</p>
+                        <!-- <a class="btn btn-primary py-3 px-5 mt-2" href="#">Read More</a> -->
+                    </div>
+                </div>
             </div>
-            <span class="service-card-title">Mobile Security Patrol</span>
-          </div>
-  
-          <div class="service-card-content">
-            <p>
-              BSFM is an established and respected security provider with a track record of successfully delivering a range of mobile security...
-            </p>
-  
-            <a href="mobile_security.html" class="service-card-btn-link">Read More...</a>
-          </div>
         </div>
-      </div>
-      <!-- key holding-->
-      <div>
-        <div class="service-card">
-          <div class="service-card-header">
-            <div class="service-card-img-box">
-              <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Dribbble-Light-Preview" transform="translate(-420.000000, -5159.000000)" fill="#FAFAFA">
-                        <g id="icons" transform="translate(56.000000, 160.000000)">
-                            <path d="M378.022118,5008.95372 C375.82425,5008.95372 374.036864,5007.16802 374.036864,5004.97223 C374.036864,5002.77644 375.82425,5000.99074 378.022118,5000.99074 C380.219986,5000.99074 382.007373,5002.77644 382.007373,5004.97223 C382.007373,5007.16802 380.219986,5008.95372 378.022118,5008.95372 M378.022118,4999 C374.720335,4999 372.044236,5001.67357 372.044236,5004.97223 C372.044236,5006.26621 372.460695,5007.46165 373.161104,5008.4401 L368.354887,5013.24178 L366.963037,5011.85025 L365.554249,5013.2587 L366.946099,5014.64923 L364,5017.59254 L365.408787,5019 L366.829531,5017.5806 L368.210421,5018.96019 L369.620205,5017.55273 L368.238318,5016.17314 L370.210023,5014.2033 L371.61084,5015.6028 L373.019627,5014.19534 L371.61881,5012.79585 L374.57288,5009.84457 C375.548271,5010.53536 376.735877,5010.94446 378.022118,5010.94446 C381.323902,5010.94446 384,5008.27089 384,5004.97223 C384,5001.67357 381.323902,4999 378.022118,4999" id="key_round-[#679]">
+        <!-- About End -->
+
+
+        <!-- Order Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Order</h5>
+                    <h1 class="mb-5">You can order from any platform</h1>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="order-item order_card rounded pt-3">
+                            <div class="p-4">
+                                <a href="https://mamabobo.co.uk/?serviceType=Pickup&utm_source=GoogleRedirect&utm_medium=organic&rwg_token=AJKvS9WDQEzg3d3PSJxr2oVfbPOf0tAx7orgvXtcpvimAZIwaTXSYw56QtqVqhoQ1eTdSZsN4Ix8xzfXB4P4oJklOa2DejWSdw%3D%3D">
+                                    <img src="./img/oyy-logo-green-long.png" alt="yoyo logo" class="order_logo">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6  wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="order-item order_card rounded pt-5">
+                            <div class="p-4">
+                                <a href="https://www.ubereats.com/gb/store/mama-bobo-restaurant/fBYs2Wk_XsKQX_xu53hhyw?diningMode=PICKUP&utm_campaign=place-action-link&utm_medium=organic&utm_source=google">
+                                    <svg class="order_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0.19000000000000128 0.25 367.46 61.17460741747068"><g fill="none"><path d="M194.32.25h40.87v10h-29.83v14.2h29v9.66h-29v14.44h29.83v10h-40.87zM348.06 59.6c12.53 0 19.59-6 19.59-14.24 0-5.87-4.18-10.25-12.93-12.15l-9.25-1.89c-5.37-1-7.06-2-7.06-4 0-2.59 2.59-4.18 7.36-4.18 5.17 0 9 1.39 10 6.17h10.84c-.59-9-7.06-14.94-20.18-14.94-11.34 0-19.3 4.68-19.3 13.75 0 6.27 4.38 10.35 13.83 12.34l10.34 2.39c4.08.8 5.17 1.9 5.17 3.59 0 2.69-3.08 4.38-8.06 4.38-6.26 0-9.84-1.39-11.23-6.17h-10.9c1.59 8.98 8.25 14.95 21.78 14.95zm-24.93-1.09H311.4c-7.36 0-11.44-4.58-11.44-10.36v-22.9h-8.25v-9.76H300V3.24h10.9v12.25h12.23v9.76H310.9v20.11c0 2.29 1.59 3.39 4.08 3.39h8.15zm-47-43v3.88a21.16 21.16 0 0 0-13.73-5 22.61 22.61 0 1 0 0 45.21 21.1 21.1 0 0 0 13.73-5v3.89H287v-43zM263.3 50.16a13.15 13.15 0 1 1 13-13.14 13 13 0 0 1-13.02 13.12z" fill="#05c167"/><path d="M170.06 23.56c-5.47 0-9.35 4.28-9.35 10.85v24.1h-8.35V16.09h8.25v5.18a11.19 11.19 0 0 1 9.94-5.48h3v7.77zM146.59 37.3c0-12.65-9-22.11-21.18-22.11a21.83 21.83 0 0 0-21.68 22.11c0 12.64 9.75 22.2 22.47 22.2a22.17 22.17 0 0 0 18.3-9.06L138.44 46a14.78 14.78 0 0 1-12.24 6.17 14.22 14.22 0 0 1-14-12.14h34.41zm-34.21-3.89c1.49-6.47 6.66-10.85 12.93-10.85s11.43 4.38 12.83 10.85zm-35.1-18.22a21.12 21.12 0 0 0-15 6.27V.25h-8.35v58.26h8.25v-5.38A21.45 21.45 0 0 0 77.3 59.5a22.16 22.16 0 1 0 0-44.31zm-.6 36.85A14.69 14.69 0 1 1 91.3 37.4 14.58 14.58 0 0 1 76.68 52zm-53.5-.4c8.06 0 14.32-6.18 14.32-15.44V.25h8.65v58.26H37.6V53a21.24 21.24 0 0 1-15.41 6.47c-12.43 0-22-9.06-22-22.8V.25H9v36c0 9.31 6 15.39 14.18 15.39z" fill="#000"/></g></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="order-item order_card rounded pt-3">
+                            <div class="p-4">
+                                <a href="https://www.just-eat.co.uk/restaurants-mama-bobo-africa-restaurant-ballynafoy/menu?serviceType=collection&utm_source=google&utm_medium=organic&utm_campaign=foodorder">
+                                    <svg class="order_logo" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="-7.18746979 -26.38168905 168.95246979 114.18459908" xmlns="http://www.w3.org/2000/svg"><path d="m18.184.838a2.235 2.235 0 0 1 2.483 0 53.87 53.87 0 0 1 5.498 3.962s.476.33.489-.229a8.72 8.72 0 0 1 .127-2.158.984.984 0 0 1 .914-.635s2.159.108 3.53.292a1.34 1.34 0 0 1 1.156 1.187s.882 5.88 1.08 8c0 0 .17 1.08 1.733 2.908 0 0 3.174 4.445 3.543 5.295 0 0 .736 1.537-.851 1.746 0 0-2.896.292-3.175.356a.724.724 0 0 0 -.635.787s-.152 10.229-.901 15.143c0 0-.197 1.95-1.27 1.905 0 0-2.978-.095-3.67-.076 0 0-.298 0-.254-.4 0 0 1.517-15.95.489-24.013 0 0-.045-1.041-.838-1.27 0 0-.724-.292-1.416.635a25.302 25.302 0 0 0 -4.711 14.394s-.083 2.54.305 3.174c0 0 .24.445 1.473.546l1.561.21s.286 0 .26.38c0 0-.355 4.68-.456 5.512-.007.19-.045.376-.115.552 0 0-.057.159-.546.14 0 0-6.882-.05-7.657 0 0 0-.324 0-.393-.171-.07-.172-.477-6.039-.464-6.87a.414.414 0 0 1 .241-.407 4.139 4.139 0 0 0 1.905-3.04c.084-.89.096-1.783.038-2.674 0 0 .254-8.971.318-10.413 0 0 .05-.489-.585-.577a.592.592 0 0 0 -.711.438v.05c0 .051-.444 5.918-.362 8.254 0 0 .153 1.53-.907 1.562 0 0-1.029.153-1.08-1.123 0 0 .076-5.753.33-8.597a.635.635 0 0 0 -.565-.635.633.633 0 0 0 -.71.514.106.106 0 0 0 0 .05s-.445 5.506-.363 8.414c0 0 .127 1.41-.997 1.358 0 0-.94.108-.99-1.143 0 0 .254-7.879.324-8.488a.635.635 0 0 0 -.565-.597h-.064a.636.636 0 0 0 -.68.527.271.271 0 0 0 0 .057s-.418 9.422-.361 12.19c0 0-.038 2.845 2.063 4 0 0 .311.178.318.451 0 0 .235 4.997.45 6.61 0 0 .077.387-.266.387l-5.289.146a1.088 1.088 0 0 1 -1.08-1.029 118.401 118.401 0 0 1 -.977-15.968.813.813 0 0 0 -.635-.87s-2.705-.247-3.359-.412a1.124 1.124 0 0 1 -.686-1.658 54.422 54.422 0 0 1 17.957-18.679zm37.245 14.8h-5.22c-1.688 0-1.688 0-2.044 1.975-.355 1.974-.35 2.044 1.2 2.044h3.105l-1.765 10.089c-.426 2.254-1.41 3.81-4.445 4.724-.774.21-.984.489-.984.844.054.568.223 1.119.495 1.62.49 1.2.775 1.415 1.194 1.415a8.01 8.01 0 0 0 1.486-.286c4.298-1.409 6.063-4.723 6.768-8.673l1.975-11.352c.349-2.4.349-2.4-1.765-2.4m17.701 0c-2.114 0-2.114 0-2.4 1.765l-1.524 9.168c-.425 2.68-1.13 4.229-3.74 4.229-2.609 0-3.453-1.55-3.028-3.95l1.48-8.742c.425-2.47.349-2.47-1.835-2.47-2.185 0-2.185 0-2.47 1.695l-1.55 9.169c-.914 5.219 2.33 8.457 6.915 8.457 5.143 0 7.752-2.324 8.597-7.822l1.555-9.099c.35-2.4.21-2.4-1.974-2.4m9.631 15.022c1.696-.07 2.61-.844 2.61-1.619 0-.99-1.2-1.34-2.82-1.835-3.174-.99-6.063-2.114-6.063-5.498 0-4.02 3.315-6.21 7.473-6.21a49.87 49.87 0 0 1 5.01.216c1.124.14 1.41.49 1.054 2.254-.356 1.765-.775 1.905-1.759 1.835-1.2-.07-2.755-.216-4.584-.216-2.114 0-2.75.781-2.75 1.486 0 .914.845 1.41 2.82 1.975 3.663 1.054 6.063 2.54 6.063 5.714 0 3.74-2.749 5.924-7.193 6.063a35.31 35.31 0 0 1 -6.35-.349c-1.415-.216-1.485-.216-1.13-2.26.35-1.829.35-1.975 1.69-1.829 1.963.248 3.944.341 5.923.28m23.067-15.029h-11.918c-1.689 0-1.689 0-2.044 2.05-.356 2.052-.28 2.045 1.2 2.045h3.88l-2.191 12.648c-.42 2.463-.35 2.463 1.835 2.463 2.044 0 2.114 0 2.4-1.758l2.253-13.334h3.74c1.69 0 1.69 0 2.045-2.044.355-2.045.349-2.05-1.2-2.05m21.015 4.025c1.69 0 1.69 0 2.045-2.045.355-2.044.35-2.044-1.2-2.044h-8.533c-3.035 0-2.96 0-3.454 3.035l-2.184 12.761c-.566 3.315-.496 3.315 2.54 3.315h8.323c1.765 0 1.689 0 2.044-1.975.356-1.974.35-2.044-1.2-2.044h-7.2l.566-3.67h5.993c1.626 0 1.626 0 1.905-1.905.28-1.905.28-1.974-1.905-1.974h-5.289l.565-3.46zm9.01 6.749 2.75-6.064c.215-.495.215-.495.564-.495.35 0 .356 0 .426.565l.844 5.994zm7.473-8.464c-.419-2.4-.419-2.4-3.81-2.4-3.174 0-3.104 0-4.088 1.975l-7.124 14.882c-1.06 2.115-.845 2.324 1.759 2.324 2.05 0 2.05 0 2.895-1.905l1.124-2.54h6.914l.35 2.54c.285 1.905.355 1.905 2.4 1.905 2.33 0 2.539-.14 2.113-2.47l-2.533-14.31zm16.87-2.33h-11.987c-1.696 0-1.696 0-2.045 2.05-.35 2.052-.286 2.045 1.194 2.045h3.88l-2.185 12.648c-.425 2.463-.356 2.463 1.835 2.463 2.044 0 2.114 0 2.394-1.758l2.26-13.334h3.733c1.695 0 1.695 0 2.045-2.044.349-2.045.425-2.05-1.124-2.05" fill="#ff8000" fill-rule="nonzero"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
             
-                            </path>
-                         </g>
-                     </g>
-                  </g>
-              </svg>
+        </div>
+        
+        <!-- order End -->
+
+
+        <!-- Reservation Start -->
+        <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s" id="booking">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <div class="reservation_img">   
+                    </div>
+                </div>
+                <div class="col-md-6 bg-dark d-flex align-items-center">
+                    <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
+                        <h1 class="text-white mb-4">Book A Table Online</h1>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating date" id="date3" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
+                                        <label for="datetime">Date & Time</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="select1">
+                                          <option value="1">People 1</option>
+                                          <option value="2">People 2</option>
+                                          <option value="3">People 3</option>
+                                        </select>
+                                        <label for="select1">No Of People</label>
+                                      </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Special Request" id="message" style="height: 100px"></textarea>
+                                        <label for="message">Special Request</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Book Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <span class="service-card-title">Key Holding</span>
-          </div>
-  
-          <div class="service-card-content">
-            <p class="font-figtree">
-              BSFM has a thorough understanding of the security environment and has the ability to act as the primary key holder for alarm activations...
-            </p>
-  
-            <a href="key_holding.html" class="service-card-btn-link">Read More...</a>
-          </div>
         </div>
-      </div>
-      <!-- retail security-->
-      <div>
-        <div class="service-card">
-          <div class="service-card-header">
-            <div class="service-card-img-box">
-              <svg  viewBox="0 0 48 48" fill="#FAFAFA" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6417 30.2284C16.8138 30.1864 16.9877 30.1671 17.1596 30.1691C17.4439 30.1724 17.7133 30.2966 17.9005 30.5105L24 37.4814L30.0995 30.5105C30.2867 30.2966 30.5561 30.1724 30.8404 30.1691C31.0123 30.1671 31.1862 30.1864 31.3583 30.2284L31.3583 30.2284C34.1198 30.902 36.9605 31.9383 39.1361 33.3669C41.289 34.7805 43 36.7267 43 39.2498V44C43 44.5523 42.5523 45 42 45H6C5.44772 45 5 44.5523 5 44V39.2498C5 36.7267 6.71103 34.7805 8.86388 33.3669C11.0395 31.9383 13.8802 30.902 16.6417 30.2284L16.6417 30.2284ZM16.7713 32.2573C14.2484 32.9006 11.7911 33.8374 9.96164 35.0387C8.0262 36.3096 7 37.7293 7 39.2498V43H41V39.2498C41 37.7293 39.9738 36.3096 38.0384 35.0387C36.2089 33.8374 33.7516 32.9006 31.2286 32.2573L24.7526 39.6585C24.5627 39.8755 24.2884 40 24 40C23.7116 40 23.4373 39.8755 23.2474 39.6585L16.7713 32.2573ZM31.1214 31.1997L31.1214 31.1997L31.1214 31.1997Z" fill="#FAFAFA"/>
-                <path d="M36 37C36 37 34 36 33 35C32 36 30 37 30 37C30 37 31.0474 41 33 41C34.9526 41 36 37 36 37Z" fill="#FAFAFA"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 29C20.5 27.8954 21.3954 27 22.5 27H25.5C26.6046 27 27.5 27.8954 27.5 29V30.382C27.5 31.0488 27.1683 31.6653 26.6267 32.0345L27.4806 36.3039L25.5194 36.6961L24.5194 31.6961C24.431 31.2539 24.6494 30.8072 25.0528 30.6056L25.5 30.382V29H22.5V30.5858L23.2071 31.2929C23.4489 31.5347 23.5504 31.8832 23.4762 32.2169L22.4762 36.7169L20.5238 36.2831L21.4047 32.3189L21.0858 32C20.7107 31.6249 20.5 31.1162 20.5 30.5858V29Z" fill="#FAFAFA"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M15 17V15H17V17C17 20.866 20.134 24 24 24C27.866 24 31 20.866 31 17V15H33V17C33 21.9706 28.9706 26 24 26C19.0294 26 15 21.9706 15 17Z" fill="#FAFAFA"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1592 3.01274L24 3.99998L23.8408 3.01274L24 2.98706L24.1592 3.01274ZM34.0042 13.3975C34.0255 13.3735 34.0475 13.3483 34.0702 13.3219C34.289 13.0679 34.5747 12.6987 34.8589 12.2219C35.4274 11.2683 36 9.86702 36 8.09676C36 7.39198 35.5854 6.86089 35.1964 6.5107C34.7934 6.14783 34.2664 5.83935 33.7125 5.57457C32.5968 5.04124 31.1507 4.58291 29.7578 4.21122C28.3538 3.83654 26.9554 3.53735 25.9115 3.33225C25.3886 3.22951 24.9525 3.14995 24.6463 3.09596C24.4932 3.06895 24.3725 3.04831 24.2895 3.03435L24.1941 3.01844L24.1688 3.0143L24.1592 3.01274C24.159 3.01271 24.1592 3.01274 24 3.99998C23.8408 3.01274 23.841 3.01271 23.8408 3.01274L23.8312 3.0143L23.8059 3.01844L23.7105 3.03435C23.6275 3.04831 23.5068 3.06895 23.3537 3.09596C23.0475 3.14995 22.6114 3.22951 22.0885 3.33225C21.0446 3.53735 19.6462 3.83654 18.2422 4.21122C16.8493 4.58291 15.4032 5.04124 14.2875 5.57457C13.7336 5.83935 13.2066 6.14783 12.8036 6.5107C12.4146 6.86089 12 7.39199 12 8.09676C12 9.86688 12.5726 11.2681 13.1411 12.2217C13.4253 12.6985 13.7109 13.0678 13.9297 13.3219C13.9525 13.3483 13.9745 13.3734 13.9958 13.3974C14.0057 13.5291 14.0258 13.6792 14.0625 13.8431C14.1859 14.3952 14.4899 15.0735 15.1572 15.7189C16.4709 16.9892 19.0445 18 24 18C28.9555 18 31.5291 16.9892 32.8428 15.7189C33.5101 15.0735 33.8141 14.3952 33.9375 13.8431C33.9742 13.6792 33.9943 13.5292 34.0042 13.3975ZM31.7015 14H16.2985C16.3655 14.09 16.4474 14.1843 16.5475 14.2811C17.3021 15.0108 19.2284 16 24 16C28.7716 16 30.6979 15.0108 31.4525 14.2811C31.5526 14.1843 31.6345 14.09 31.7015 14ZM15.4308 12H32.5692C32.724 11.8186 32.9319 11.5485 33.1411 11.1977C33.5667 10.4837 33.9885 9.45184 33.9998 8.15026C33.9826 8.12431 33.9429 8.0733 33.8583 7.99708C33.6598 7.81837 33.3273 7.60719 32.85 7.37902C31.9032 6.92647 30.5993 6.50576 29.2422 6.14359C27.8962 5.78439 26.5446 5.49487 25.526 5.29473C25.0176 5.19485 24.5944 5.11766 24.299 5.06556C24.1761 5.04388 24.0754 5.02656 24 5.01378C23.9246 5.02656 23.8239 5.04388 23.701 5.06556C23.4056 5.11766 22.9824 5.19485 22.474 5.29473C21.4554 5.49487 20.1038 5.78439 18.7578 6.14359C17.4007 6.50576 16.0968 6.92647 15.15 7.37902C14.6727 7.60719 14.3402 7.81837 14.1417 7.99708C14.0571 8.0733 14.0174 8.12431 14.0002 8.15026C14.0115 9.45167 14.4333 10.4835 14.8589 11.1976C15.0681 11.5485 15.276 11.8185 15.4308 12Z" fill="#FAFAFA"/>
-                <path d="M26 9C26 10.1046 25.1046 11 24 11C22.8954 11 22 10.1046 22 9C22 7.89543 22.8954 7 24 7C25.1046 7 26 7.89543 26 9Z" fill="#FAFAFA"/>
-              </svg>
+        <!-- Reservation end -->
+
+
+
+        
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="section-title ff-secondary text-start primary_orange fw-normal mb-4"><span class="primary_green">MamaBobo</span> Restaurant</h5>
+                        <a class="btn btn-link" href="about.html">About Us</a>
+                        <a class="btn btn-link" href="contact.html">Contact Us</a>
+                        <a class="btn btn-link" href="faq.html">Frequently Asked Questions</a>
+                        <a class="btn btn-link" href="privacy_policy.html">Privacy Policy</a>
+                        <a class="btn btn-link" href="terms.html">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>407 Ormeau Road, BT7 3GP</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+44 743 641 8993</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i><small>info@mamaboborestaurant.co.uk</small></p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social svg_icon" href="https://www.tiktok.com/@mamaboboafrica"><svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                              </svg></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/mamaboboafrica/"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/mamaboborestaurant?igsh=MTc0cmxxNTNjcTdxMQ=="><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal mb-2">Opening</h5>
+                        <p class="text-light fw-normal">Monday - <i>closed</i></p>
+                        <p class="text-light fw-normal">Tuesday - Friday</p>
+                        <p class="text-light fw-normal"><i>5pm - 9pm</i></p>
+                        <p class="text-light fw-normal">Saturday - <i>3pm - 9pm</i></p>
+                        <p class="text-light fw-normal">Sunday - <i>12pm - 6pm</i></p>
+                        
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Offers & Rewards</h5>
+                        <p>Sign up for amazing offers, coupons and rewards.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">claim</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <span class="service-card-title">Retail Security</span>
-          </div>
-  
-          <div class="service-card-content">
-            <p>
-              BSFM has a proven track record in providing retail security to businesses of all shapes and sizes. We have successfully helped scores of local retailers...
-            </p>
-  
-            <a href="retail_security.html" class="service-card-btn-link">Read More...</a>
-          </div>
-        </div>
-      </div>
-      <!--- access control-->
-      <div>
-        <div class="service-card">
-          <div class="service-card-header">
-            <div class="service-card-img-box">
-              <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="#FAFAFA" d="M41 25v462h46V71h31.3c-9-3.83-15.3-12.74-15.3-23s6.3-19.17 15.3-23H41zm96.7 0c9 3.83 15.3 12.74 15.3 23s-6.3 19.17-15.3 23h36.4c-4.5-6.57-7.1-14.49-7.1-23s2.6-16.43 7.1-23h-36.4zm70.3 0c-12.8 0-23 10.19-23 23s10.2 23 23 23 23-10.19 23-23-10.2-23-23-23zm33.9 0c4.5 6.57 7.1 14.49 7.1 23s-2.6 16.43-7.1 23h36.4c-9-3.83-15.3-12.74-15.3-23s6.3-19.17 15.3-23h-36.4zm55.8 0c9 3.83 15.3 12.74 15.3 23s-6.3 19.17-15.3 23H329v416h46V25h-77.3zm173.9 32.64l-32 32 12.8 12.76 32-32.04-12.8-12.72zM393 121v46h38.9c5.1 0 5.1-1.2 6-3 1-1.9 1.1-4 1.1-4v-32s-.1-2.1-1.1-4c-.9-1.8-.9-3-5.9-3h-39zm69 14v18h32v-18h-32zm-257.8 13.3c-17 2.2-32.5 22.1-32.5 48 0 14.2 5.1 26.8 12.3 35.4l8.5 10.3-13.3 2.5c-9.3 1.8-16.1 6.9-22 14.9-5.9 8-10.3 19.3-13.5 32.3-5.8 23.3-7 52.1-7.2 77.4h31.4l8.5 114.9c21.8 4.8 44.9 4.5 65.9 0l7.5-114.9h29.7c0-25.6-.4-54.7-5.5-78.4-2.9-12.9-7.2-24.2-13.1-32.1-6-8.1-13.3-13-23.8-14.7l-13.6-2 8.8-10.8c6.6-8.6 11.2-21 11.2-34.8 0-27.5-17.1-48-35.8-48h-3.5zm248.2 37.3l-12.8 12.8 32 32 12.8-12.8-32-32z"/></svg>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <span>MamaBobo Restaurant</span>, All Right Reserved.
+							Developed By <a class="border-bottom" href="https://hunkutech.com"><i>HUNKUTECH</i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <span class="service-card-title">Access Control</span>
-          </div>
-  
-          <div class="service-card-content">
-            <p>
-              BSFM has a wide range of access control systems to help control access to any business or commercial environment, ensuring that only visitors you know and trust...
-            </p>
-  
-            <a href="access_control.html" class="service-card-btn-link">Read More...</a>
-          </div>
         </div>
-      </div>
-      <!-- construction sites-->
-      <div>
-        <div class="service-card">
-          <div class="service-card-header">
-            <div class="service-card-img-box">
-              <svg  viewBox="0 0 48 48" fill="#FAFAFA" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6417 30.2284C16.8138 30.1864 16.9877 30.1671 17.1596 30.1691C17.4439 30.1724 17.7133 30.2966 17.9005 30.5105L24 37.4814L30.0995 30.5105C30.2867 30.2966 30.5561 30.1724 30.8404 30.1691C31.0123 30.1671 31.1862 30.1864 31.3583 30.2284L31.3583 30.2284C34.1198 30.902 36.9605 31.9383 39.1361 33.3669C41.289 34.7805 43 36.7267 43 39.2498V44C43 44.5523 42.5523 45 42 45H6C5.44772 45 5 44.5523 5 44V39.2498C5 36.7267 6.71103 34.7805 8.86388 33.3669C11.0395 31.9383 13.8802 30.902 16.6417 30.2284L16.6417 30.2284ZM16.7713 32.2573C14.2484 32.9006 11.7911 33.8374 9.96164 35.0387C8.0262 36.3096 7 37.7293 7 39.2498V43H41V39.2498C41 37.7293 39.9738 36.3096 38.0384 35.0387C36.2089 33.8374 33.7516 32.9006 31.2286 32.2573L24.7526 39.6585C24.5627 39.8755 24.2884 40 24 40C23.7116 40 23.4373 39.8755 23.2474 39.6585L16.7713 32.2573ZM31.1214 31.1997L31.1214 31.1997L31.1214 31.1997Z" fill="#FAFAFA"/>
-                <path d="M36 37C36 37 34 36 33 35C32 36 30 37 30 37C30 37 31.0474 41 33 41C34.9526 41 36 37 36 37Z" fill="#FAFAFA"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 29C20.5 27.8954 21.3954 27 22.5 27H25.5C26.6046 27 27.5 27.8954 27.5 29V30.382C27.5 31.0488 27.1683 31.6653 26.6267 32.0345L27.4806 36.3039L25.5194 36.6961L24.5194 31.6961C24.431 31.2539 24.6494 30.8072 25.0528 30.6056L25.5 30.382V29H22.5V30.5858L23.2071 31.2929C23.4489 31.5347 23.5504 31.8832 23.4762 32.2169L22.4762 36.7169L20.5238 36.2831L21.4047 32.3189L21.0858 32C20.7107 31.6249 20.5 31.1162 20.5 30.5858V29Z" fill="#FAFAFA"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M15 17V15H17V17C17 20.866 20.134 24 24 24C27.866 24 31 20.866 31 17V15H33V17C33 21.9706 28.9706 26 24 26C19.0294 26 15 21.9706 15 17Z" fill="#FAFAFA"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1592 3.01274L24 3.99998L23.8408 3.01274L24 2.98706L24.1592 3.01274ZM34.0042 13.3975C34.0255 13.3735 34.0475 13.3483 34.0702 13.3219C34.289 13.0679 34.5747 12.6987 34.8589 12.2219C35.4274 11.2683 36 9.86702 36 8.09676C36 7.39198 35.5854 6.86089 35.1964 6.5107C34.7934 6.14783 34.2664 5.83935 33.7125 5.57457C32.5968 5.04124 31.1507 4.58291 29.7578 4.21122C28.3538 3.83654 26.9554 3.53735 25.9115 3.33225C25.3886 3.22951 24.9525 3.14995 24.6463 3.09596C24.4932 3.06895 24.3725 3.04831 24.2895 3.03435L24.1941 3.01844L24.1688 3.0143L24.1592 3.01274C24.159 3.01271 24.1592 3.01274 24 3.99998C23.8408 3.01274 23.841 3.01271 23.8408 3.01274L23.8312 3.0143L23.8059 3.01844L23.7105 3.03435C23.6275 3.04831 23.5068 3.06895 23.3537 3.09596C23.0475 3.14995 22.6114 3.22951 22.0885 3.33225C21.0446 3.53735 19.6462 3.83654 18.2422 4.21122C16.8493 4.58291 15.4032 5.04124 14.2875 5.57457C13.7336 5.83935 13.2066 6.14783 12.8036 6.5107C12.4146 6.86089 12 7.39199 12 8.09676C12 9.86688 12.5726 11.2681 13.1411 12.2217C13.4253 12.6985 13.7109 13.0678 13.9297 13.3219C13.9525 13.3483 13.9745 13.3734 13.9958 13.3974C14.0057 13.5291 14.0258 13.6792 14.0625 13.8431C14.1859 14.3952 14.4899 15.0735 15.1572 15.7189C16.4709 16.9892 19.0445 18 24 18C28.9555 18 31.5291 16.9892 32.8428 15.7189C33.5101 15.0735 33.8141 14.3952 33.9375 13.8431C33.9742 13.6792 33.9943 13.5292 34.0042 13.3975ZM31.7015 14H16.2985C16.3655 14.09 16.4474 14.1843 16.5475 14.2811C17.3021 15.0108 19.2284 16 24 16C28.7716 16 30.6979 15.0108 31.4525 14.2811C31.5526 14.1843 31.6345 14.09 31.7015 14ZM15.4308 12H32.5692C32.724 11.8186 32.9319 11.5485 33.1411 11.1977C33.5667 10.4837 33.9885 9.45184 33.9998 8.15026C33.9826 8.12431 33.9429 8.0733 33.8583 7.99708C33.6598 7.81837 33.3273 7.60719 32.85 7.37902C31.9032 6.92647 30.5993 6.50576 29.2422 6.14359C27.8962 5.78439 26.5446 5.49487 25.526 5.29473C25.0176 5.19485 24.5944 5.11766 24.299 5.06556C24.1761 5.04388 24.0754 5.02656 24 5.01378C23.9246 5.02656 23.8239 5.04388 23.701 5.06556C23.4056 5.11766 22.9824 5.19485 22.474 5.29473C21.4554 5.49487 20.1038 5.78439 18.7578 6.14359C17.4007 6.50576 16.0968 6.92647 15.15 7.37902C14.6727 7.60719 14.3402 7.81837 14.1417 7.99708C14.0571 8.0733 14.0174 8.12431 14.0002 8.15026C14.0115 9.45167 14.4333 10.4835 14.8589 11.1976C15.0681 11.5485 15.276 11.8185 15.4308 12Z" fill="#FAFAFA"/>
-                <path d="M26 9C26 10.1046 25.1046 11 24 11C22.8954 11 22 10.1046 22 9C22 7.89543 22.8954 7 24 7C25.1046 7 26 7.89543 26 9Z" fill="#FAFAFA"/>
-              </svg>
-            </div>
-            <span class="service-card-title">Construction Sites</span>
-          </div>
-  
-          <div class="service-card-content">
-            <p>
-              BSFM is experienced in working with building and construction firms to keep their sites safe from criminals, intruders and trespassers...
-            </p>
-  
-            <a href="construction_site.html" class="service-card-btn-link">Read More...</a>
-          </div>
-        </div>
-      </div>
-      <!---vacant property security-->
-      <div>
-        <div class="service-card">
-          <div class="service-card-header">
-            <div class="service-card-img-box">
-              <svg  viewBox="0 0 48 48" fill="#FAFAFA" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6417 30.2284C16.8138 30.1864 16.9877 30.1671 17.1596 30.1691C17.4439 30.1724 17.7133 30.2966 17.9005 30.5105L24 37.4814L30.0995 30.5105C30.2867 30.2966 30.5561 30.1724 30.8404 30.1691C31.0123 30.1671 31.1862 30.1864 31.3583 30.2284L31.3583 30.2284C34.1198 30.902 36.9605 31.9383 39.1361 33.3669C41.289 34.7805 43 36.7267 43 39.2498V44C43 44.5523 42.5523 45 42 45H6C5.44772 45 5 44.5523 5 44V39.2498C5 36.7267 6.71103 34.7805 8.86388 33.3669C11.0395 31.9383 13.8802 30.902 16.6417 30.2284L16.6417 30.2284ZM16.7713 32.2573C14.2484 32.9006 11.7911 33.8374 9.96164 35.0387C8.0262 36.3096 7 37.7293 7 39.2498V43H41V39.2498C41 37.7293 39.9738 36.3096 38.0384 35.0387C36.2089 33.8374 33.7516 32.9006 31.2286 32.2573L24.7526 39.6585C24.5627 39.8755 24.2884 40 24 40C23.7116 40 23.4373 39.8755 23.2474 39.6585L16.7713 32.2573ZM31.1214 31.1997L31.1214 31.1997L31.1214 31.1997Z" fill="#FAFAFA"/>
-                <path d="M36 37C36 37 34 36 33 35C32 36 30 37 30 37C30 37 31.0474 41 33 41C34.9526 41 36 37 36 37Z" fill="#FAFAFA"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 29C20.5 27.8954 21.3954 27 22.5 27H25.5C26.6046 27 27.5 27.8954 27.5 29V30.382C27.5 31.0488 27.1683 31.6653 26.6267 32.0345L27.4806 36.3039L25.5194 36.6961L24.5194 31.6961C24.431 31.2539 24.6494 30.8072 25.0528 30.6056L25.5 30.382V29H22.5V30.5858L23.2071 31.2929C23.4489 31.5347 23.5504 31.8832 23.4762 32.2169L22.4762 36.7169L20.5238 36.2831L21.4047 32.3189L21.0858 32C20.7107 31.6249 20.5 31.1162 20.5 30.5858V29Z" fill="#FAFAFA"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M15 17V15H17V17C17 20.866 20.134 24 24 24C27.866 24 31 20.866 31 17V15H33V17C33 21.9706 28.9706 26 24 26C19.0294 26 15 21.9706 15 17Z" fill="#FAFAFA"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1592 3.01274L24 3.99998L23.8408 3.01274L24 2.98706L24.1592 3.01274ZM34.0042 13.3975C34.0255 13.3735 34.0475 13.3483 34.0702 13.3219C34.289 13.0679 34.5747 12.6987 34.8589 12.2219C35.4274 11.2683 36 9.86702 36 8.09676C36 7.39198 35.5854 6.86089 35.1964 6.5107C34.7934 6.14783 34.2664 5.83935 33.7125 5.57457C32.5968 5.04124 31.1507 4.58291 29.7578 4.21122C28.3538 3.83654 26.9554 3.53735 25.9115 3.33225C25.3886 3.22951 24.9525 3.14995 24.6463 3.09596C24.4932 3.06895 24.3725 3.04831 24.2895 3.03435L24.1941 3.01844L24.1688 3.0143L24.1592 3.01274C24.159 3.01271 24.1592 3.01274 24 3.99998C23.8408 3.01274 23.841 3.01271 23.8408 3.01274L23.8312 3.0143L23.8059 3.01844L23.7105 3.03435C23.6275 3.04831 23.5068 3.06895 23.3537 3.09596C23.0475 3.14995 22.6114 3.22951 22.0885 3.33225C21.0446 3.53735 19.6462 3.83654 18.2422 4.21122C16.8493 4.58291 15.4032 5.04124 14.2875 5.57457C13.7336 5.83935 13.2066 6.14783 12.8036 6.5107C12.4146 6.86089 12 7.39199 12 8.09676C12 9.86688 12.5726 11.2681 13.1411 12.2217C13.4253 12.6985 13.7109 13.0678 13.9297 13.3219C13.9525 13.3483 13.9745 13.3734 13.9958 13.3974C14.0057 13.5291 14.0258 13.6792 14.0625 13.8431C14.1859 14.3952 14.4899 15.0735 15.1572 15.7189C16.4709 16.9892 19.0445 18 24 18C28.9555 18 31.5291 16.9892 32.8428 15.7189C33.5101 15.0735 33.8141 14.3952 33.9375 13.8431C33.9742 13.6792 33.9943 13.5292 34.0042 13.3975ZM31.7015 14H16.2985C16.3655 14.09 16.4474 14.1843 16.5475 14.2811C17.3021 15.0108 19.2284 16 24 16C28.7716 16 30.6979 15.0108 31.4525 14.2811C31.5526 14.1843 31.6345 14.09 31.7015 14ZM15.4308 12H32.5692C32.724 11.8186 32.9319 11.5485 33.1411 11.1977C33.5667 10.4837 33.9885 9.45184 33.9998 8.15026C33.9826 8.12431 33.9429 8.0733 33.8583 7.99708C33.6598 7.81837 33.3273 7.60719 32.85 7.37902C31.9032 6.92647 30.5993 6.50576 29.2422 6.14359C27.8962 5.78439 26.5446 5.49487 25.526 5.29473C25.0176 5.19485 24.5944 5.11766 24.299 5.06556C24.1761 5.04388 24.0754 5.02656 24 5.01378C23.9246 5.02656 23.8239 5.04388 23.701 5.06556C23.4056 5.11766 22.9824 5.19485 22.474 5.29473C21.4554 5.49487 20.1038 5.78439 18.7578 6.14359C17.4007 6.50576 16.0968 6.92647 15.15 7.37902C14.6727 7.60719 14.3402 7.81837 14.1417 7.99708C14.0571 8.0733 14.0174 8.12431 14.0002 8.15026C14.0115 9.45167 14.4333 10.4835 14.8589 11.1976C15.0681 11.5485 15.276 11.8185 15.4308 12Z" fill="#FAFAFA"/>
-                <path d="M26 9C26 10.1046 25.1046 11 24 11C22.8954 11 22 10.1046 22 9C22 7.89543 22.8954 7 24 7C25.1046 7 26 7.89543 26 9Z" fill="#FAFAFA"/>
-              </svg>
-            </div>
-            <span class="service-card-title">Vacant Property Security</span>
-          </div>
-  
-          <div class="service-card-content">
-            <p>
-              When properties become vacant, they become an easy target for unwanted trespassers like squatters and vandals...
-            </p>
-  
-            <a href="property_security.html" class="service-card-btn-link">Read More...</a>
-          </div>
-        </div>
-      </div>
-      <!--- sub contractor-->
-      <div>
-        <div class="service-card">
-          <div class="service-card-header">
-            <div class="service-card-img-box">
-              <svg  viewBox="0 0 48 48" fill="#FAFAFA" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6417 30.2284C16.8138 30.1864 16.9877 30.1671 17.1596 30.1691C17.4439 30.1724 17.7133 30.2966 17.9005 30.5105L24 37.4814L30.0995 30.5105C30.2867 30.2966 30.5561 30.1724 30.8404 30.1691C31.0123 30.1671 31.1862 30.1864 31.3583 30.2284L31.3583 30.2284C34.1198 30.902 36.9605 31.9383 39.1361 33.3669C41.289 34.7805 43 36.7267 43 39.2498V44C43 44.5523 42.5523 45 42 45H6C5.44772 45 5 44.5523 5 44V39.2498C5 36.7267 6.71103 34.7805 8.86388 33.3669C11.0395 31.9383 13.8802 30.902 16.6417 30.2284L16.6417 30.2284ZM16.7713 32.2573C14.2484 32.9006 11.7911 33.8374 9.96164 35.0387C8.0262 36.3096 7 37.7293 7 39.2498V43H41V39.2498C41 37.7293 39.9738 36.3096 38.0384 35.0387C36.2089 33.8374 33.7516 32.9006 31.2286 32.2573L24.7526 39.6585C24.5627 39.8755 24.2884 40 24 40C23.7116 40 23.4373 39.8755 23.2474 39.6585L16.7713 32.2573ZM31.1214 31.1997L31.1214 31.1997L31.1214 31.1997Z" fill="#FAFAFA"/>
-                <path d="M36 37C36 37 34 36 33 35C32 36 30 37 30 37C30 37 31.0474 41 33 41C34.9526 41 36 37 36 37Z" fill="#FAFAFA"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 29C20.5 27.8954 21.3954 27 22.5 27H25.5C26.6046 27 27.5 27.8954 27.5 29V30.382C27.5 31.0488 27.1683 31.6653 26.6267 32.0345L27.4806 36.3039L25.5194 36.6961L24.5194 31.6961C24.431 31.2539 24.6494 30.8072 25.0528 30.6056L25.5 30.382V29H22.5V30.5858L23.2071 31.2929C23.4489 31.5347 23.5504 31.8832 23.4762 32.2169L22.4762 36.7169L20.5238 36.2831L21.4047 32.3189L21.0858 32C20.7107 31.6249 20.5 31.1162 20.5 30.5858V29Z" fill="#FAFAFA"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M15 17V15H17V17C17 20.866 20.134 24 24 24C27.866 24 31 20.866 31 17V15H33V17C33 21.9706 28.9706 26 24 26C19.0294 26 15 21.9706 15 17Z" fill="#FAFAFA"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1592 3.01274L24 3.99998L23.8408 3.01274L24 2.98706L24.1592 3.01274ZM34.0042 13.3975C34.0255 13.3735 34.0475 13.3483 34.0702 13.3219C34.289 13.0679 34.5747 12.6987 34.8589 12.2219C35.4274 11.2683 36 9.86702 36 8.09676C36 7.39198 35.5854 6.86089 35.1964 6.5107C34.7934 6.14783 34.2664 5.83935 33.7125 5.57457C32.5968 5.04124 31.1507 4.58291 29.7578 4.21122C28.3538 3.83654 26.9554 3.53735 25.9115 3.33225C25.3886 3.22951 24.9525 3.14995 24.6463 3.09596C24.4932 3.06895 24.3725 3.04831 24.2895 3.03435L24.1941 3.01844L24.1688 3.0143L24.1592 3.01274C24.159 3.01271 24.1592 3.01274 24 3.99998C23.8408 3.01274 23.841 3.01271 23.8408 3.01274L23.8312 3.0143L23.8059 3.01844L23.7105 3.03435C23.6275 3.04831 23.5068 3.06895 23.3537 3.09596C23.0475 3.14995 22.6114 3.22951 22.0885 3.33225C21.0446 3.53735 19.6462 3.83654 18.2422 4.21122C16.8493 4.58291 15.4032 5.04124 14.2875 5.57457C13.7336 5.83935 13.2066 6.14783 12.8036 6.5107C12.4146 6.86089 12 7.39199 12 8.09676C12 9.86688 12.5726 11.2681 13.1411 12.2217C13.4253 12.6985 13.7109 13.0678 13.9297 13.3219C13.9525 13.3483 13.9745 13.3734 13.9958 13.3974C14.0057 13.5291 14.0258 13.6792 14.0625 13.8431C14.1859 14.3952 14.4899 15.0735 15.1572 15.7189C16.4709 16.9892 19.0445 18 24 18C28.9555 18 31.5291 16.9892 32.8428 15.7189C33.5101 15.0735 33.8141 14.3952 33.9375 13.8431C33.9742 13.6792 33.9943 13.5292 34.0042 13.3975ZM31.7015 14H16.2985C16.3655 14.09 16.4474 14.1843 16.5475 14.2811C17.3021 15.0108 19.2284 16 24 16C28.7716 16 30.6979 15.0108 31.4525 14.2811C31.5526 14.1843 31.6345 14.09 31.7015 14ZM15.4308 12H32.5692C32.724 11.8186 32.9319 11.5485 33.1411 11.1977C33.5667 10.4837 33.9885 9.45184 33.9998 8.15026C33.9826 8.12431 33.9429 8.0733 33.8583 7.99708C33.6598 7.81837 33.3273 7.60719 32.85 7.37902C31.9032 6.92647 30.5993 6.50576 29.2422 6.14359C27.8962 5.78439 26.5446 5.49487 25.526 5.29473C25.0176 5.19485 24.5944 5.11766 24.299 5.06556C24.1761 5.04388 24.0754 5.02656 24 5.01378C23.9246 5.02656 23.8239 5.04388 23.701 5.06556C23.4056 5.11766 22.9824 5.19485 22.474 5.29473C21.4554 5.49487 20.1038 5.78439 18.7578 6.14359C17.4007 6.50576 16.0968 6.92647 15.15 7.37902C14.6727 7.60719 14.3402 7.81837 14.1417 7.99708C14.0571 8.0733 14.0174 8.12431 14.0002 8.15026C14.0115 9.45167 14.4333 10.4835 14.8589 11.1976C15.0681 11.5485 15.276 11.8185 15.4308 12Z" fill="#FAFAFA"/>
-                <path d="M26 9C26 10.1046 25.1046 11 24 11C22.8954 11 22 10.1046 22 9C22 7.89543 22.8954 7 24 7C25.1046 7 26 7.89543 26 9Z" fill="#FAFAFA"/>
-              </svg>
-            </div>
-            <span class="service-card-title">Sub Contractor</span>
-          </div>
-  
-          <div class="service-card-content">
-            <p>
-              If you are a security company and are unable to provide a security service due to overstretched resources, we are always able to provide security staff to...
-            </p>
-  
-            <a href="sub_contractor.html" class="service-card-btn-link">Read More...</a>
-          </div>
-        </div>
-      </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
-  </div>
-  <!--- end services -->
 
-  <!--- brief information-->
-  <div class="p-4 w-full flex justify-center">
-    <div class="brief-card">
-      <div class="brief-card-details">
-        <p class="brief-card-text-title">Budlite Security and Facility Management Ltd</p>
-        <p class="brief-card-text-body">BSFM is a National firm providing professional security and facilities management services to businesses of all types and sizes, throughout the UK. TheBudlite management team has decades of experience in crime prevention, close security and operational security, allowing us to offer expert advice to our clients and build the best team to fulfil all our customers’ needs.</p>
-      </div>
-      <a href="about_us.html" class="brief-card-button">Read More...</a>
-    </div>
-  </div>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-  <!--- accreditations-->
-  <div class="p-4 mt-2">
-    <h6 class="font-bold font-figtree p-4 text-blue_voilet">ACCREDITATIONS</h6>
-    <div class="grid grid-cols-1 md:grid-cols-2 justify-between">
-      <!-- first card-->
-      <div class=" sm:flex dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-        <div class="shrink-0 relative w-32 rounded-t-xl overflow-hidden pt-[40%] sm:rounded-s-xl sm:max-w-60 md:rounded-se-none md:max-w-xs">
-          <img class="p-3 size-32 absolute top-0 start-0 object-fit" src="/ourpartners1.jpeg" alt="Card Image">
-        </div>
-        <div class="flex flex-wrap">
-          <div class="p-4 flex flex-col h-full sm:p-7">
-            <h3 class="text-lg font-bold font-figtree text-gray-800 dark:text-white">
-              Prompt Payment Code
-            </h3>
-            <p class="mt-1 text-gray-500 font-figtree dark:text-neutral-400">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque maxime, consequuntur recusandae voluptates tempore voluptate deserunt quos dicta perferendis doloribus impedit nisi minima nemo facere veniam repudiandae at quae quas!
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- second card-->
-      <div class=" sm:flex dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-        <div class="shrink-0 relative w-32 rounded-t-xl overflow-hidden pt-[40%] sm:rounded-s-xl sm:max-w-60 md:rounded-se-none md:max-w-xs">
-          <img class="p-3 size-32 absolute top-0 start-0 object-fit" src="/ourpartners2.jpeg" alt="Card Image">
-        </div>
-        <div class="flex flex-wrap">
-          <div class="p-4 flex flex-col h-full sm:p-7">
-            <h3 class="text-lg font-bold font-figtree text-gray-800 dark:text-white">
-              CHAS Accredited Contractor
-            </h3>
-            <p class="mt-1 text-gray-500 font-figtree dark:text-neutral-400">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, earum praesentium! Dolorem molestias expedita facere adipisci distinctio nemo labore nobis maxime quae? Quis similique provident voluptas molestias recusandae. Soluta, veritatis?
-            </p>
-          </div>
-        </div>
-      </div>
-      <!--- third card-->
-      <div class=" sm:flex dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-        <div class="shrink-0 relative w-32 rounded-t-xl overflow-hidden pt-[40%] sm:rounded-s-xl sm:max-w-60 md:rounded-se-none md:max-w-xs">
-          <img class="p-3 size-32 absolute top-0 start-0 object-fit" src="/ourpartners3.jpeg" alt="Card Image">
-        </div>
-        <div class="flex flex-wrap">
-          <div class="p-4 flex flex-col h-full sm:p-7">
-            <h3 class="text-lg font-bold font-figtree text-gray-800 dark:text-white">
-              Safe Contractor
-            </h3>
-            <p class="mt-1 text-gray-500 font-figtree dark:text-neutral-400">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, id quisquam ex incidunt placeat doloribus in optio veritatis? Molestiae ut totam odio voluptates id cum amet inventore accusantium ipsum quos?
-            </p>
-          </div>
-        </div>
-      </div>
-      <!--- fourth card-->
-      <div class=" sm:flex dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-        <div class="shrink-0 relative w-32 rounded-t-xl overflow-hidden pt-[40%] sm:rounded-s-xl sm:max-w-60 md:rounded-se-none md:max-w-xs">
-          <img class="p-3 size-32 absolute top-0 start-0 object-fit" src="/ourpartners4.jpeg" alt="Card Image">
-        </div>
-        <div class="flex flex-wrap">
-          <div class="p-4 flex flex-col h-full sm:p-7">
-            <h3 class="text-lg font-bold font-figtree text-gray-800 dark:text-white">
-              information Commission Office
-            </h3>
-            <p class="mt-1 text-gray-500 font-figtree dark:text-neutral-400">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolor sapiente nulla explicabo modi animi aliquid voluptatum accusamus totam vero perferendis, consequuntur inventore! Porro eveniet, quidem nulla iusto mollitia at!
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- contact us-->
-  <div class="">
-    <h6 class="p-4 font-bold font-figtree text-blue_voilet">CONTACT</h6>
-      <div class="grid grid-cols-1 md:grid-cols-2 justify-between">
-        <div class="p-6">
-          <h2 class="font-semibold text-3xl mb-2 font-figtree text-vampire_black md:text-5xl">Contact Us</h2>
-          <p class="font-figtree font-normal text-gray-500">Send a message and we will contact you as soon as possible.</p>
-          <h5 class="mt-3 font-figtree text-blue_voilet">Phone Number:</h5>
-          <p class="font-medium font-figtree text-gray-500">02890135214, 07861651024</p>
-          <h5 class="mt-3 font-figtree text-blue_voilet">Email Address:</h5>
-          <p class="font-medium font-figtree text-gray-500">info@budlitesecurity.com</p>
-          <h5 class="mt-3 font-figtree text-blue_voilet">Address:</h5>
-          <p class="font-medium font-figtree text-gray-500">92 York Road, Belfast, Co. Antrim BT15 3HF</p>
-        </div>
-        <div class="mt-12 max-w-lg mx-auto">
-          <!-- Card -->
-          <div class="mb-4 flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8 dark:border-neutral-700">
-          
-      
-              <form>
-                  <div class="grid gap-4 lg:gap-6">
-                      <!-- Grid -->
-                      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
-                          <div>
-                              <label for="hs-name-contacts-1" class="sr-only">Name</label>
-                              <input type="text" name="hs-name-contacts-1" id="" autocomplete="name" class="font-figtree py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="Name">
-                          </div>
-              
-                          <div>
-                              <label for="hs-phone-number-1" class="sr-only">Email</label>
-                              <input type="email" name="hs-email-number-1" id="hs-email-contact-1" class="font-figtree py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="Email">
-                          </div>
-                      </div>
-                      <!-- End Grid -->
-                      <div>
-                          <label for="hs-phone-number-1" class="sr-only font-figtree">Subject</label>
-                          <input type="text" name="phone-number" id="hs-phone-number-1" class="font-figtree py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="Subject">
-                      </div>
-                      
-                      <div>
-                          <label for="hs-about-contacts-1" class="sr-only">Message</label>
-                          <textarea id="hs-about-contacts-1" name="hs-about-contacts-1" rows="4" style="resize: none;" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="Message"></textarea>
-                      </div>
-                  
-                  </div>
-                  <!-- End Grid -->
-          
-                  <div class="mt-6 grid">
-                      <button type="submit" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">Send inquiry</button>
-                  </div>
-              </form>
-          </div>
-          <!-- End Card -->
-      </div>
-    </div>
-  </div>
-  <!-- footer-->
-  <footer class="bg-gradient-to-r from-blue_voilet to-vampire_black mt-auto w-full max-w-[85rem] py-6 px-4 sm:px-4 lg:px-6 mx-auto">
-    <!-- Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-      <div class="col-span-full lg:col-span-1 lg:block">
-        <a href="index.html" class="flex-none rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80" aria-label="Preline">
-          <span class="inline-flex items-center gap-x-2 text-3xl text-lotion_white font-bold font-figtree dark:text-white">
-              <img class="w-16 h-auto rounded-full" src="logo.jpg" alt="Logo">
-              BSFM
-          </span>
-        </a>
-      </div>
-      <!-- End Col -->
-
-      <div>
-        <div class="mt-3 grid space-y-3 text-sm">
-          <p><a href="index.html" class="inline-flex gap-x-2 text-lotion_white focus:outline-none focus:text-lotion_white dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200">Home</a></p>
-          <p><a href="services.html" class="inline-flex gap-x-2 text-lotion_white focus:outline-none focus:text-lotion_white dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200">Services</a></p>
-          <p><a href="career.html" class="inline-flex gap-x-2 text-lotion_white focus:outline-none focus:text-lotion_white dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200">Career</a></p>
-          <p><a href="about_us.html" class="inline-flex gap-x-2 text-lotion_white focus:outline-none focus:text-lotion_white dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200">About Us</a></p>
-          <p><a href="contact_us.html" class="inline-flex gap-x-2 text-lotion_white focus:outline-none focus:text-lotion_white dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200">Contact Us</a></p>
-        </div>
-      </div>
-      <!-- End Col -->
-
-      <div>
-        <div class="mt-3 grid space-y-3 text-sm">
-          <p><a href="terms.html" class="inline-flex gap-x-2 text-lotion_white focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200">Terms & Conditions</a></p>
-          <p><a href="privacy.html" class="inline-flex gap-x-2 text-lotion_white focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200">Privacy Policy</a></p>
-        </div>
-      </div>
-      <!-- End Col -->
-    </div>
-    <!-- End Grid -->
-
-    <div class="pt-5 mt-5 border-t border-gray-200 dark:border-neutral-700">
-      <div class="sm:flex sm:justify-between sm:items-center">
-        <div class="flex flex-wrap items-center gap-3">
-          <div class="space-x-4 text-sm">
-            <p class="font-figtree text-sm inline-flex gap-x-2 text-lotion_white focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">©2024 BUDLITE SECURITY & FACILITY MANAGEMENT LTD.</p>
-          </div>
-        </div>
-
-        <div class="flex flex-wrap justify-between items-center gap-3">
-          <div class="space-x-4">
-            <p class="font-figtree text-sm inline-flex gap-x-2 text-lotion_white focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">DEVELOPED BY <a href="https://hunkutech.com" class="text-bluey font-bold font-figtree">Joshua Hunkuten</a>.</p>
-          </div>
-        </div>
-        <!-- End Col -->
-      </div>
-    </div>
-  </footer>
-
-    <!--- script-->
-    <script src="./script.js"></script>
-    <!--- preline ui -->
-    <script src="./node_modules/preline/dist/preline.js"></script>
-    <!--- flowbite ui-->
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
