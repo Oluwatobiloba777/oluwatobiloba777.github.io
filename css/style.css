@@ -299,7 +299,17 @@
 
 .service_card{
     height: 459px !important;
+    border: 2px solid;
+    border-radius: 50px !important;
+    
 }
+
+.img_round{
+    border: 1px solid;
+    border-radius: 10px !important;
+    
+}
+
 
 .service-item:hover * {
     color: var(--light) !important;
