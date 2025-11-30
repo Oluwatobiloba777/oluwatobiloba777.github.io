@@ -363,6 +363,11 @@
     height: 38px !important;
 }
 
+.menu_icon {
+    width: 24px;
+    height: 24px;
+}
+
 
 /*** Footer ***/
 .footer .btn.btn-social {
