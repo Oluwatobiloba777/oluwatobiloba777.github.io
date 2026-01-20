@@ -193,7 +193,7 @@
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 320px) {
     .navbar-dark {
         position: absolute;
         width: 100%;
@@ -206,6 +206,12 @@
     .sticky-top.navbar-dark {
         position: fixed;
         background: var(--dark) !important;
+    }
+}
+
+@media (min-width: 769px){
+    .order_link {
+        display: none;
     }
 }
 
