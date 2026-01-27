@@ -238,6 +238,12 @@
     color: rgba(255, 255, 255, .5);
 }
 
+.menu-mini-heading {
+    font-size: x-small;
+    font-weight: 100;
+    
+}
+
 
 /*** Section Title ***/
 .section-title {
@@ -374,9 +380,14 @@
 }
 
 .menu_icon {
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
     margin-left: 2px;
+}
+.menu_pepper_icon {
+    width: 8px;
+    height: 16px;
+    margin-right: 2px;
 }
 
 
