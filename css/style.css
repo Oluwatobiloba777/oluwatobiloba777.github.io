@@ -239,7 +239,7 @@
 }
 
 .menu-mini-heading {
-    font-size: x-small;
+    font-size: 12px;
     font-weight: 100;
     
 }
@@ -380,8 +380,8 @@
 }
 
 .menu_icon {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     margin-left: 2px;
 }
 
